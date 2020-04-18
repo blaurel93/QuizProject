@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import { Row, Col } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Row } from "reactstrap";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import contentData from "../utils/contentData";
+// import contentData from "../utils/contentData";
 ///// THIS BELOW IS WHERE WE COULD PLACE ALL THE QUIZS /////
 
 class Content extends Component {
@@ -11,6 +11,9 @@ class Content extends Component {
     return (
       <div className="next-steps my-5">
         <h2 className="my-5 text-center">Heres some quizzes</h2>
+
+      {/* HERE  UNDERNEATH  IS THE CONTENT AFTER THE LINE BREAK */}
+
         <Row className="d-flex justify-content-between">
           
           <card>
