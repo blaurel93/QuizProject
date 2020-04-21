@@ -10,6 +10,7 @@ import Home from "./views/Home";
 import Profile from "./views/Profile";
 import { useAuth0 } from "./react-auth0-spa";
 import history from "./utils/history";
+import Quiz from "./views/Quiz"
 
 // styles
 import "./App.css";
@@ -33,6 +34,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <PrivateRoute path="/profile" component={Profile} />
+            <PrivateRoute path="/quiz" component={Quiz} />
           </Switch>
         </Container>
         <Footer />
