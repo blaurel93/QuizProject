@@ -34,7 +34,7 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="dark" href="https://i.pinimg.com/originals/37/48/e9/3748e95e98410884d0457d9b74df6fe1.jpg" dark expand="md">
         <Container>
-        <NavbarBrand href="/"><img className="nav-logo" src={logo}></img></NavbarBrand>
+          <NavbarBrand href="/"><img className="nav-logo" alt="logo" src={logo}></img></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
