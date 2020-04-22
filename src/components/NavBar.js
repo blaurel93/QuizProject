@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../assets/output-onlinepngtools.png";
+import "../assets/style.css"
 import {
   Collapse,
   Container,
@@ -32,7 +33,7 @@ const NavBar = () => {
 
   return (
     <div className="nav-container">
-      <Navbar color="dark" href="https://i.pinimg.com/originals/37/48/e9/3748e95e98410884d0457d9b74df6fe1.jpg" dark expand="md">
+      <Navbar className="bgColor " href="https://i.pinimg.com/originals/37/48/e9/3748e95e98410884d0457d9b74df6fe1.jpg" dark expand="md">
         <Container>
           <NavbarBrand href="/"><img className="nav-logo" alt="logo" src={logo}></img></NavbarBrand>
           <NavbarToggler onClick={toggle} />
