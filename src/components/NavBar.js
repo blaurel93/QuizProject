@@ -38,7 +38,7 @@ const NavBar = () => {
           <NavbarBrand href="/"><img className="nav-logo" alt="logo" src={logo}></img></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
+            <Nav className="mr-left" navbar>
               <NavItem>
                 <NavLink
                   tag={RouterNavLink}
@@ -49,6 +49,20 @@ const NavBar = () => {
                   Home of Quizzes
                 </NavLink>
               </NavItem>
+            </Nav>
+            <Nav className="mr-auto" navbar>
+            {isAuthenticated && (
+              <NavItem>
+                <NavLink
+                  tag={RouterNavLink}
+                  to="/quiz"
+                  exact
+                  activeClassName="router-link-exact-active"
+                >
+                  Quizzes
+                </NavLink>
+              </NavItem>
+            )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
