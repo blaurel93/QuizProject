@@ -13,3 +13,13 @@
 .bg-light {
     background-color: #EEEBD0!important;
 }
+.cardS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boox {
+    width: 250px;
+    margin: 1em;
+}
