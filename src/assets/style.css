@@ -5,14 +5,48 @@
 }
 
 .hometag {
-    color:#091540 ;
+    color:#091540;
+    font-size: 25px;
 }
+
+.hometag2:hover {
+    color: #55c4ec!important;
+    text-decoration: underline;
+}
+    
+.loginColor {
+    background-color: #091540;
+    border: #091540
+}
+
+.loginSign {
+    color: white;
+    margin: auto;
+}
+
+.loginColor:hover {
+    background-color: #55c4ec;
+}
+
+.QuizLink:hover {
+    text-decoration: underline;
+    color: #55c4ec!important;
+}
+
+.quizlink2 {
+    color:#091540;
+    font-size: 25px;
+    margin: auto;
+}
+
+
+
 
 
 /* Footer Style */
 
 .nav-logo {
-   padding-left: 35%;
+   padding-left: 25%;
 }
 
 .bg-light {
