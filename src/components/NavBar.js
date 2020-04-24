@@ -44,7 +44,7 @@ const NavBar = () => {
                   tag={RouterNavLink}
                   to="/"
                   exact
-                  activeClassName="router-link-exact-active"
+                  activeClassName="hometag2"
                 >
                   <Nav className="hometag">Home of Quizzes</Nav>
                 </NavLink>
@@ -53,14 +53,14 @@ const NavBar = () => {
             <Nav className="mr-auto" navbar>
               {isAuthenticated && (
                 <NavItem>
-                  <NavLink
+                  <NavLink 
                     tag={RouterNavLink}
                     to="/quiz"
                     exact
-                    activeClassName="router-link-exact-active"
+                    activeClassName="QuizLink"
                   >
-                    Quizzes
-                </NavLink>
+                    <p className="quizlink2">Quizzes</p>
+                  </NavLink>
                 </NavItem>
               )}
             </Nav>
@@ -69,18 +69,17 @@ const NavBar = () => {
                 <NavItem>
                   <Button
                     id="qsLoginBtn"
-                    color="primary"
-                    className="btn-margin"
+                    className="loginColor"
                     onClick={() => loginWithRedirect({})}
                   >
-                    Log in / Sign Up
+                    <p className="loginSign">Log in / Sign Up</p>
                   </Button>
                 </NavItem>
               )}
               {isAuthenticated && (
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret id="profileDropDown">
-                    <img
+                    <img 
                       src={user.picture}
                       alt="Profile"
                       className="nav-user-profile rounded-circle"
