@@ -4,6 +4,11 @@
     background-color: #EEEBD0!important;
 }
 
+.hometag {
+    color:#091540 ;
+}
+
+
 /* Footer Style */
 
 .nav-logo {
@@ -13,6 +18,8 @@
 .bg-light {
     background-color: #EEEBD0!important;
 }
+
+
 .cardS {
     display: flex;
     flex-direction: row;

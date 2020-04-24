@@ -46,23 +46,23 @@ const NavBar = () => {
                   exact
                   activeClassName="router-link-exact-active"
                 >
-                  Home of Quizzes
+                  <Nav className="hometag">Home of Quizzes</Nav>
                 </NavLink>
               </NavItem>
             </Nav>
             <Nav className="mr-auto" navbar>
-            {isAuthenticated && (
-              <NavItem>
-                <NavLink
-                  tag={RouterNavLink}
-                  to="/quiz"
-                  exact
-                  activeClassName="router-link-exact-active"
-                >
-                  Quizzes
+              {isAuthenticated && (
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/quiz"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Quizzes
                 </NavLink>
-              </NavItem>
-            )}
+                </NavItem>
+              )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
