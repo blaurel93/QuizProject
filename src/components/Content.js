@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import { Row } from "reactstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import {
+  Card
+} from 'reactstrap';
 // import contentData from "../utils/contentData";
 ///// THIS BELOW IS WHERE WE COULD PLACE ALL THE QUIZS /////
 
@@ -16,33 +19,33 @@ class Content extends Component {
 
         <Row className="d-flex justify-content-between">
           
-          <card>
+          <Card>
             <h1>Hello</h1>
-            <p>this is a card</p>
-          </card>
+            <p>this is a Card</p>
+          </Card>
           
-          <card>
+          <Card>
             <h1>Hello</h1>
-            <p>this is a card</p>
-          </card>
-          <card>
+            <p>this is a Card</p>
+          </Card>
+          <Card>
             <h1>Hello</h1>
-            <p>this is a card</p>
-          </card>
+            <p>this is a Card</p>
+          </Card>
         </Row>
         <Row className="d-flex justify-content-between">
-          <card>
+          <Card>
             <h1>Hello</h1>
-            <p>this is a card</p>
-          </card>
-          <card>
+            <p>this is a Card</p>
+          </Card>
+          <Card>
             <h1>Hello</h1>
-            <p>this is a card</p>
-          </card>
-          <card>
+            <p>this is a Card</p>
+          </Card>
+          <Card>
             <h1>Hello</h1>
-            <p>this is a card</p>
-          </card>
+            <p>this is a Card</p>
+          </Card>
         </Row>
       </div>
     );
