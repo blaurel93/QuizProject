@@ -1,149 +1,79 @@
 import React from "react";
 import "../assets/style.css"
 import "../views/Quiz"
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+
 
 const Quiz0 = () => (
-            
+
     <Form>
-        <h1>Quiz 1</h1>
-        <FormGroup tag="fieldset">
-            <legend>Question 1</legend>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option one 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option two 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option three
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option four
-              </Label>
-            </FormGroup>
+        <h1 className="Quiz">Quiz 1</h1>
+        <FormGroup row>
+            <Label for="exampleSelect" sm={2}>What do you want to ask?</Label>
+            <Col sm={10}>
+                <Input type="select" name="select" id="exampleSelect">
+                    <option>Answer 1</option>
+                    <option>Bullshit 2 </option>
+                    <option>Fuck me 3</option>
+                    <option>Why 4</option>
+                    <option>Couldn't it be 5</option>
+                </Input>
+            </Col>
         </FormGroup>
-        <FormGroup tag="fieldset">
-            <legend>Question 2</legend>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option one 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option two 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option three
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option four
-              </Label>
-            </FormGroup>
+        <FormGroup row>
+            <Label for="exampleSelect" sm={2}>What do you want to ask?</Label>
+            <Col sm={10}>
+                <Input type="select" name="select" id="exampleSelect">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </Input>
+            </Col>
         </FormGroup>
-        <FormGroup tag="fieldset">
-            <legend>Question 3</legend>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option one 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option two 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option three
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option four
-              </Label>
-            </FormGroup>
+        <FormGroup row>
+            <Label for="exampleSelect" sm={2}>What do you want to ask?</Label>
+            <Col sm={10}>
+                <Input type="select" name="select" id="exampleSelect">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </Input>
+            </Col>
         </FormGroup>
-        <FormGroup tag="fieldset">
-            <legend>Question 4</legend>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option one 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option two 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option three
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option four
-              </Label>
-            </FormGroup>
+        <FormGroup row>
+            <Label for="exampleSelect" sm={2}>What do you want to ask?</Label>
+            <Col sm={10}>
+                <Input type="select" name="select" id="exampleSelect">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </Input>
+            </Col>
         </FormGroup>
-        <FormGroup tag="fieldset">
-            <legend>Question 5</legend>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option one 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option two 
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-                <Label check>
-                    <Input type="radio" name="radio1" />{' '}
-                Option three
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option four
-              </Label>
-            </FormGroup>
+        <FormGroup row>
+            <Label for="exampleSelect" sm={2}>What do you want to ask?</Label>
+            <Col sm={10}>
+                <Input type="select" name="select" id="exampleSelect">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </Input>
+            </Col>
         </FormGroup>
-        <Button>Submit</Button>
-        
+
+        <FormGroup check row>
+            <Col sm={{ size: 10, offset: 2 }}>
+                <Button>Submit</Button>
+            </Col>
+        </FormGroup>
     </Form>
 
 );
