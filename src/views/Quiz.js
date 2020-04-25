@@ -101,7 +101,7 @@ function Quiz() {
                 <h2 className="quizTitles quizTitle1">Milks gone bad?</h2>
                     <CardBody className="quizText0">
                         <CardTitle>Like it sour?</CardTitle>
-                        <CardSubtitle>Utterly savy</CardSubtitle>
+                        <CardSubtitle>Utterly savvy</CardSubtitle>
                         <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz1" onClick={() => { handleSelectQuiz(1) }}>
                         <u className="quizButton">Take the Quiz!</u>
