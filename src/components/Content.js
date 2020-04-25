@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 
+
 import { Row } from "reactstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 import {
   Card
@@ -13,40 +15,11 @@ class Content extends Component {
   render() {
     return (
       <div className="next-steps my-5">
-        <h2 className="my-5 text-center">Heres some quizzes</h2>
+        <h2 className="my-5 text-center">Please try taking this practice Quiz!</h2>
 
-      {/* HERE  UNDERNEATH  IS THE CONTENT AFTER THE LINE BREAK */}
+        {/* HERE  UNDERNEATH  IS THE CONTENT AFTER THE LINE BREAK */}
 
-        <Row className="d-flex justify-content-between">
-          
-          <Card>
-            <h1>Hello</h1>
-            <p>this is a Card</p>
-          </Card>
-          
-          <Card>
-            <h1>Hello</h1>
-            <p>this is a Card</p>
-          </Card>
-          <Card>
-            <h1>Hello</h1>
-            <p>this is a Card</p>
-          </Card>
-        </Row>
-        <Row className="d-flex justify-content-between">
-          <Card>
-            <h1>Hello</h1>
-            <p>this is a Card</p>
-          </Card>
-          <Card>
-            <h1>Hello</h1>
-            <p>this is a Card</p>
-          </Card>
-          <Card>
-            <h1>Hello</h1>
-            <p>this is a Card</p>
-          </Card>
-        </Row>
+
       </div>
     );
   }
