@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Quiz1 = () => (
     <Card className="displayArea">
         <Form>
-            <h1 className="Quiz">Its Organic & Non GMO....</h1>
+            <h1 className="Quiz quizTitle">Its Organic & Non GMO....</h1>
             <FormGroup row>
                 <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
                 <Col sm={10}>

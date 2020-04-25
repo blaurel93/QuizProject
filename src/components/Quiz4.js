@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Quiz4 = () => (
     <Card className="displayArea">
         <Form>
-            <h1 className="Quiz">So you know fish?</h1>
+            <h1 className="Quiz quizTitle">So you know fish?</h1>
             <FormGroup row>
                 <Label for="exampleSelect" sm={2}>What feature sets fish apart from other water-dwelling animals?</Label>
                 <Col sm={10}>
