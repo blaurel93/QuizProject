@@ -117,3 +117,6 @@
     font-size: 15px;
     text-decoration: none;
 }
+.noLine {
+    border: 0px transparent;
+}
