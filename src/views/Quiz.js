@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import axios from "axios";
 import "../assets/style.css";
+import "../assets/quiz.css"
 import Quiz0 from "../components/Quiz0";
 import Quiz1 from "../components/Quiz1";
 import Quiz2 from "../components/Quiz2";

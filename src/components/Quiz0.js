@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/style.css"
+import "../assets/quiz.css"
 import "../views/Quiz"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 import { Link } from "react-router-dom";
