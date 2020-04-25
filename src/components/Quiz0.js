@@ -9,7 +9,7 @@ const Quiz0 = () => (
     <Form>
         <h1 className="Quiz">How well do you know Jalapenos?</h1>
         <FormGroup row>
-            <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+            <Label for="exampleSelect" sm={2}>Which fun fact is true?</Label>
             <Col sm={10}>
                 <Input type="select" name="select" id="exampleSelect">
                     <option className="correctAnswer">Jalapenos are one of the best sources of vitamin C</option>
@@ -21,7 +21,7 @@ const Quiz0 = () => (
             </Col>
         </FormGroup>
         <FormGroup row>
-            <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+            <Label for="exampleSelect" sm={2}>What is crazy about jalapenos?</Label>
             <Col sm={10}>
                 <Input type="select" name="select" id="exampleSelect">
                     <option>You cant grow jalapenos</option>
@@ -33,7 +33,7 @@ const Quiz0 = () => (
             </Col>
         </FormGroup>
         <FormGroup row>
-            <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+            <Label for="exampleSelect" sm={2}>What can Jalapenos do??</Label>
             <Col sm={10}>
                 <Input type="select" name="select" id="exampleSelect">
                     <option>jalapenos will blind you</option>
@@ -57,7 +57,7 @@ const Quiz0 = () => (
             </Col>
         </FormGroup>
         <FormGroup row>
-            <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+            <Label for="exampleSelect" sm={2}>Which is fun about jalapenos?</Label>
             <Col sm={10}>
                 <Input type="select" name="select" id="exampleSelect">
                     <option>Jalapenos are used as a dessert for kids!</option>
