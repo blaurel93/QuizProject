@@ -10,7 +10,7 @@ const Quiz1 = () => (
         <Form>
             <h1 className="Quiz quizTitle">Its Organic & Non GMO....</h1>
             <FormGroup row>
-                <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+                <Label for="exampleSelect" sm={2}>What about milk is true?</Label>
                 <Col sm={10}>
                     <Input type="select" name="select" id="exampleSelect">
                         <option>Milk will never go bad</option>
@@ -22,7 +22,7 @@ const Quiz1 = () => (
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+                <Label for="exampleSelect" sm={2}>Which truthfully describes milk?</Label>
                 <Col sm={10}>
                     <Input type="select" name="select" id="exampleSelect">
                         <option className="correctAnswer">For the price, milk supplies more nutrients than juice</option>
@@ -46,7 +46,7 @@ const Quiz1 = () => (
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+                <Label for="exampleSelect" sm={2}>Which statement about milk is true?</Label>
                 <Col sm={10}>
                     <Input type="select" name="select" id="exampleSelect">
                         <option>Milk builds strong bones</option>
@@ -58,7 +58,7 @@ const Quiz1 = () => (
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
+                <Label for="exampleSelect" sm={2}>Milk...</Label>
                 <Col sm={10}>
                     <Input type="select" name="select" id="exampleSelect">
                         <option>Milk is normally green</option>
