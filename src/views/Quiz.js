@@ -110,7 +110,7 @@ function Quiz() {
                 </Card>
                 <Card className="boox imageQuiz2">
                 <h2 className="quizTitles quizTitle1">But do you Bike?</h2>
-                    <CardBody>
+                    <CardBody className="quizText1">
                         <CardTitle>This is 2</CardTitle>
                         <CardSubtitle>QUiz 2</CardSubtitle>
                         <CardText>This quiz 2</CardText>

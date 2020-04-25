@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 .Quiz {
     font-size: 100px;
 }
@@ -95,15 +96,19 @@
 }
 .quizTitles {
     margin: auto;
+    letter-spacing: 2px;
 }
 .quizText0 {
     color: white;
+    font-family: "Bangers";
 }
 .quizText1 {
     color: black;
+    font-family: "Bangers";
 }
 .quizTitle1 {
     color: black!important;
+    font-family: "Bangers";
 }
 .quizButton {
     background-color: black;
@@ -119,4 +124,10 @@
 }
 .noLine {
     border: 0px transparent;
+}
+.quizTitle {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Bangers";
+    letter-spacing: 3px;
 }
