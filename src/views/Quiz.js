@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import axios from "axios";
 import "../assets/style.css";
+import "../assets/quiz.css"
 import Quiz0 from "../components/Quiz0";
 import Quiz1 from "../components/Quiz1";
 import Quiz2 from "../components/Quiz2";
@@ -11,10 +12,10 @@ import Quiz4 from "../components/Quiz4";
 
 
 import {
-    Card, CardImg, CardText, CardBody,
+    Card, CardText, CardBody,
     CardTitle, CardSubtitle, Button, Container
 } from 'reactstrap';
-import { Route, Link, Switch, HashRouter } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 
 function Quiz() {
     const { loading, user } = useAuth0();
@@ -80,74 +81,74 @@ function Quiz() {
 
     console.log("this is our state", state)
     return (
-        
-            <Container>
-                {/* {state.ActiveQuiz()}  CHECK THE STATE HERE       isthistrue  ?() : ()*/}
-                <div className="cardS">
 
-                    <Card className="boox">
-                        <CardImg top width="100%" src="../assets/output-onlinepngtools.png" alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>This is 0</CardTitle>
-                            <CardSubtitle>Quiz 0</CardSubtitle>
-                            <CardText>This is defiantly quiz 0</CardText>
-                            <Link to="/quiz/Quiz0" onClick={() => { handleSelectQuiz(0) }}>
-                                <u>Home</u>
-                            </Link>
-                        </CardBody>
-                    </Card>
-                    <Card className="boox">
-                        <CardImg top width="100%" src="../assets/output-onlinepngtools.png" alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>This is 1</CardTitle>
-                            <CardSubtitle>Quiz 1</CardSubtitle>
-                            <CardText>This is quiz 1</CardText>
-                            <Link to="/quiz/Quiz1" onClick={() => { handleSelectQuiz(1) }}>
-                                <u>Home</u>
-                            </Link>
-                        </CardBody>
-                    </Card>
-                    <Card className="boox">
-                        <CardImg top width="100%" src="../assets/output-onlinepngtools.png" alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>This is 2</CardTitle>
-                            <CardSubtitle>QUiz 2</CardSubtitle>
-                            <CardText>This quiz 2</CardText>    
-                            <Link to="/quiz/Quiz2" onClick={() => { handleSelectQuiz(2) }}>
-                                <u>Home</u>
-                            </Link>
-                        </CardBody>
-                    </Card>
-                    <Card className="boox">
-                        <CardImg top width="100%" src="../assets/output-onlinepngtools.png" alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>This is 3</CardTitle>
-                            <CardSubtitle>Quiz 3</CardSubtitle>
-                            <CardText>This quizx 3</CardText>
-                            <Link to="/quiz/Quiz3" onClick={() => { handleSelectQuiz(3) }}>
-                                <u>Home</u>
-                            </Link>
-                        </CardBody>
-                    </Card>
-                    <Card className="boox">
-                        <CardImg top width="100%" src="../assets/output-onlinepngtools.png" alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle>This is 4</CardTitle>
-                            <CardSubtitle>Quiz 4</CardSubtitle>
-                            <CardText>This quiz 4</CardText>
-                            <Link to="/quiz/Quiz4" onClick={() => { handleSelectQuiz(4) }}>
-                                <u>Home</u>
-                            </Link>
-                        </CardBody>
-                    </Card>
-                </div>
+        <Container>
+            {/* {state.ActiveQuiz()}  CHECK THE STATE HERE       isthistrue  ?() : ()*/}
+            <div className="cardS">
 
-                <div className="displayArea">
+                <Card className="boox imageQuiz0 quizText0">
+                    <h2 className="quizTitles">Jalapeno's Quiz</h2>
+                    <CardBody>
+                        <CardTitle>This is 0</CardTitle>
+                        <CardSubtitle>Quiz 0</CardSubtitle>
+                        <CardText>This is defiantly quiz 0</CardText>
+                        <Link to="/quiz/Quiz0" onClick={() => { handleSelectQuiz(0) }}>
+                        <u className="quizButton">Take the Quiz!</u>
+                        </Link>
+                    </CardBody>
+                </Card>
+                <Card className="boox imageQuiz1">
+                <h2 className="quizTitles quizTitle1">Milks gone bad?</h2>
+                    <CardBody className="quizText0">
+                        <CardTitle>This is 1</CardTitle>
+                        <CardSubtitle>Quiz 1</CardSubtitle>
+                        <CardText>This is quiz 1</CardText>
+                        <Link to="/quiz/Quiz1" onClick={() => { handleSelectQuiz(1) }}>
+                        <u className="quizButton">Take the Quiz!</u>
+                        </Link>
+                    </CardBody>
+                </Card>
+                <Card className="boox imageQuiz2">
+                <h2 className="quizTitles quizTitle1">But do you Bike?</h2>
+                    <CardBody>
+                        <CardTitle>This is 2</CardTitle>
+                        <CardSubtitle>QUiz 2</CardSubtitle>
+                        <CardText>This quiz 2</CardText>
+                        <Link to="/quiz/Quiz2" onClick={() => { handleSelectQuiz(2) }}>
+                        <u className="quizButton">Take the Quiz!</u>
+                        </Link>
+                    </CardBody>
+                </Card>
+                <Card className="boox imageQuiz3">
+                <h2 className="quizTitles quizText1">Quizzly Bears?</h2>
+                    <CardBody className="quizText1">
+                        <CardTitle>This is 3</CardTitle>
+                        <CardSubtitle>Quiz 3</CardSubtitle>
+                        <CardText>This quizx 3</CardText>
+                        <Link to="/quiz/Quiz3" onClick={() => { handleSelectQuiz(3) }}>
+                        <u className="quizButton">Take the Quiz!</u>
+                        </Link>
+                    </CardBody>
+                </Card>
+                <Card className="boox imageQuiz4">
+                <h2 className="quizTitles quizText0">Phish?</h2>
+                    <CardBody className="quizText0">
+                        <CardTitle>This is 4</CardTitle>
+                        <CardSubtitle>Quiz 4</CardSubtitle>
+                        <CardText>This quiz 4</CardText>
+                        <Link to="/quiz/Quiz4" onClick={() => { handleSelectQuiz(4) }}>
+                            <u className="quizButton">Take the Quiz!</u>
+                        </Link>
+                    </CardBody>
+                </Card>
+            </div>
+
+            <Card>
                 <Routes />
-                </div>
+            </Card>
 
-            </Container>
-        
+        </Container>
+
 
     )
 }
