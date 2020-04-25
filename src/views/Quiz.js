@@ -143,7 +143,7 @@ function Quiz() {
                 </Card>
             </div>
 
-            <Card>
+            <Card className="noLine">
                 <Routes />
             </Card>
 
