@@ -8,7 +8,7 @@ const Hero = () => (
     <h1 className="mb-4">Quizzly</h1>
 
     <p className="lead">
-      HERE IS WHERE YOU TAKE QUIZZES tO FIND OUT HOW DUMB YOU ARE
+      Welcome to Quizzly! Test how smart you are with our wonderful quizes!
     </p>
   </div>
 );

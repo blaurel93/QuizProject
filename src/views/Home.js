@@ -7,7 +7,7 @@ import Content from "../components/Content";
 const Home = () => (
   <Fragment>
     <Hero />
-    <hr />
+    
     <Content />
   </Fragment>
 );
