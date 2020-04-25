@@ -89,9 +89,9 @@ function Quiz() {
                 <Card className="boox imageQuiz0 quizText0">
                     <h2 className="quizTitles">Jalapeno's Quiz</h2>
                     <CardBody>
-                        <CardTitle>This is 0</CardTitle>
-                        <CardSubtitle>Quiz 0</CardSubtitle>
-                        <CardText>This is defiantly quiz 0</CardText>
+                        <CardTitle>Oooh its hot!</CardTitle>
+                        <CardSubtitle>Peppas</CardSubtitle>
+                        <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz0" onClick={() => { handleSelectQuiz(0) }}>
                         <u className="quizButton">Take the Quiz!</u>
                         </Link>
@@ -100,9 +100,9 @@ function Quiz() {
                 <Card className="boox imageQuiz1">
                 <h2 className="quizTitles quizTitle1">Milks gone bad?</h2>
                     <CardBody className="quizText0">
-                        <CardTitle>This is 1</CardTitle>
-                        <CardSubtitle>Quiz 1</CardSubtitle>
-                        <CardText>This is quiz 1</CardText>
+                        <CardTitle>Like it sour?</CardTitle>
+                        <CardSubtitle>Utterly savy</CardSubtitle>
+                        <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz1" onClick={() => { handleSelectQuiz(1) }}>
                         <u className="quizButton">Take the Quiz!</u>
                         </Link>
@@ -111,9 +111,9 @@ function Quiz() {
                 <Card className="boox imageQuiz2">
                 <h2 className="quizTitles quizTitle1">But do you Bike?</h2>
                     <CardBody className="quizText1">
-                        <CardTitle>This is 2</CardTitle>
-                        <CardSubtitle>QUiz 2</CardSubtitle>
-                        <CardText>This quiz 2</CardText>
+                        <CardTitle>Forever Two Wheels</CardTitle>
+                        <CardSubtitle>Keep on rollin</CardSubtitle>
+                        <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz2" onClick={() => { handleSelectQuiz(2) }}>
                         <u className="quizButton">Take the Quiz!</u>
                         </Link>
@@ -122,9 +122,9 @@ function Quiz() {
                 <Card className="boox imageQuiz3">
                 <h2 className="quizTitles quizText1">Quizzly Bears?</h2>
                     <CardBody className="quizText1">
-                        <CardTitle>This is 3</CardTitle>
-                        <CardSubtitle>Quiz 3</CardSubtitle>
-                        <CardText>This quizx 3</CardText>
+                        <CardTitle>Grrrrrowl</CardTitle>
+                        <CardSubtitle>Sup honey</CardSubtitle>
+                        <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz3" onClick={() => { handleSelectQuiz(3) }}>
                         <u className="quizButton">Take the Quiz!</u>
                         </Link>
@@ -133,9 +133,9 @@ function Quiz() {
                 <Card className="boox imageQuiz4">
                 <h2 className="quizTitles quizText0">Phish?</h2>
                     <CardBody className="quizText0">
-                        <CardTitle>This is 4</CardTitle>
-                        <CardSubtitle>Quiz 4</CardSubtitle>
-                        <CardText>This quiz 4</CardText>
+                        <CardTitle>Something smells</CardTitle>
+                        <CardSubtitle>Where the hook at doe?</CardSubtitle>
+                        <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz4" onClick={() => { handleSelectQuiz(4) }}>
                             <u className="quizButton">Take the Quiz!</u>
                         </Link>
