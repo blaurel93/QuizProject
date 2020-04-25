@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 body {
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,11 +12,13 @@ body {
 .hometag {
     color:#091540;
     font-size: 25px;
+    font-family: "bangers";
 }
 
 .hometag2:hover {
     color: #55c4ec!important;
     text-decoration: underline;
+
 }
     
 .loginColor {
@@ -40,6 +44,7 @@ body {
     color:#091540;
     font-size: 25px;
     margin: auto;
+    font-family: "bangers";
 }
 
 .bgthis {
@@ -52,6 +57,10 @@ body {
   padding-bottom: 20px;
 }
 
+/*BODY on Lander Page*/
+.my-5 {
+    font-family: "bangers";
+}
 
 
 /* Footer Style */
