@@ -1,18 +1,63 @@
-
+body {
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* NavBar Style */
 .bgColor {
     background-color: #EEEBD0!important;
 }
 
 .hometag {
-    color:#091540 ;
+    color:#091540;
+    font-size: 25px;
 }
+
+.hometag2:hover {
+    color: #55c4ec!important;
+    text-decoration: underline;
+}
+    
+.loginColor {
+    background-color: #091540;
+    border: #091540
+}
+
+.loginSign {
+    color: white;
+    margin: auto;
+}
+
+.loginColor:hover {
+    background-color: #55c4ec;
+}
+
+.QuizLink:hover {
+    text-decoration: underline;
+    color: #55c4ec!important;
+}
+
+.quizlink2 {
+    color:#091540;
+    font-size: 25px;
+    margin: auto;
+}
+
+.bgthis {
+    background-image: url("../assets/beanstalk.png");
+    -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  max-width: 100%!important;
+  padding-bottom: 20px;
+}
+
 
 
 /* Footer Style */
 
 .nav-logo {
-   padding-left: 35%;
+   padding-left: 25%;
 }
 
 .bg-light {
@@ -29,7 +74,6 @@
 .boox {
     width: 250px;
     margin: 1em;
-}
-.Quiz {
-    font-size: 100px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 1px solid black!important;
 }
