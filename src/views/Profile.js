@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-
+import "../assets/style.css"
 import Highlight from "../components/Highlight";
 import Loading from "../components/Loading";
 import { useAuth0 } from "../react-auth0-spa";
@@ -14,7 +14,7 @@ const Profile = () => {
   //// THIS IS WHERE WE CAN DISPLAY WHAT ONLY PEOPLE WHO LOG IN CAN SEE ////
   return (
     <Container className="mb-5">
-      <Row className="align-items-center profile-header mb-5 text-center text-md-left">
+      <Row className="align-items-center profile-header mb-5 text-center text-md-left profileSpace">
         <Col md={2}>
           <img
             src={user.picture}
