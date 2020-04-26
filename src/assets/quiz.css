@@ -97,17 +97,20 @@
 .quizTitles {
     margin: auto;
     letter-spacing: 2px;
+    text-shadow: 2px 2px black;
 }
 .quizText0 {
     color: white;
     font-family: "Bangers";
+    text-shadow: 2px 2px black;
 }
 .quizText1 {
-    color: black;
-    font-family: "Bangers";
+    color: white;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px black;
 }
 .quizTitle1 {
-    color: black!important;
+    color: white!important;
     font-family: "Bangers";
 }
 .quizButton {
