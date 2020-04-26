@@ -7,7 +7,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
       color: white;
-      background: linear-gradient(-45deg, #ec3672, #b857b2, #9993ca, skyblue);
+      background: linear-gradient(-45deg, #F03461, #6457a6, #55c4ec);
       background-size: 200% 200%;
       -webkit-animation: Gradient 10s ease infinite;
       -moz-animation: Gradient 10s ease infinite;
@@ -15,7 +15,7 @@
     padding: 10px;
     
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    border: 2px solid black!important;
+    border: 3px solid black!important;
 }
 
 
@@ -121,7 +121,7 @@
     color: #55c4ec;
 }
 .quizButton:hover {
-    background-color: #64;
+    background-color: #b857b2;
     font-size: 15px;
     text-decoration: none;
 }

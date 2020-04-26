@@ -12,14 +12,26 @@ body {
 .hometag {
     color:#091540;
     font-size: 25px;
+    margin: auto;
     font-family: "bangers";
 }
 
-.hometag2:hover {
+.hometag:hover {
     color: #55c4ec!important;
-    text-decoration: underline;
-
 }
+
+.quizlink2 {
+    color:#091540;
+    font-size: 25px;
+    margin: auto;
+    font-family: "bangers";
+}
+
+.quizlink2:hover {
+    color: #55c4ec!important;
+}
+
+
     
 .loginColor {
     background-color: #091540;
@@ -36,16 +48,10 @@ body {
 }
 
 .QuizLink:hover {
-    text-decoration: underline;
     color: #55c4ec!important;
 }
 
-.quizlink2 {
-    color:#091540;
-    font-size: 25px;
-    margin: auto;
-    font-family: "bangers";
-}
+
 
 .bgthis {
     background-image: url("../assets/quizzlypg3.png");
@@ -59,8 +65,28 @@ body {
 
 /*BODY on Lander Page*/
 .my-5 {
-    font-family: "bangers";
+    color: #6457a6;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #091540;
+    font-size: 50px;
+    
 }
+
+.lead {
+    color: #F03461;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #091540;
+    font-size: 40px!important;
+}
+
+.mb-4 {
+    color: #6457a6;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #091540;
+    font-size: 75px;
+}
+
+
 
 
 /* Footer Style */
@@ -72,5 +98,4 @@ body {
 .bg-light {
     background-color: #EEEBD0!important;
 }
-
 
