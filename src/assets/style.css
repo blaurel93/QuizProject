@@ -111,3 +111,10 @@ body {
     font-size: 75px;
 }
 
+.userInfo {
+    text-align: left;
+    color: #55c4ec!important;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #091540;
+    font-size: 35px;
+}

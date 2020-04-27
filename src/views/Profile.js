@@ -28,12 +28,13 @@ const Profile = () => {
           </h2>
         </Col>
       </Row>
-
-      <ul>
-        <p>username: {user.name}</p>
-        <p>email: {user.email}</p>
-        <p>nickname: {user.nickname}</p>
-      </ul>
+      <div className="userInfo">
+        <ul>
+          <p>Username: {user.name} </p>
+          <p>Email: {user.email}</p>
+          <p>Nickname: {user.nickname}</p>
+        </ul>
+      </div>
 
 
 
