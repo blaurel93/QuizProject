@@ -14,6 +14,7 @@ body {
     font-size: 25px;
     margin: auto;
     font-family: "bangers";
+    text-shadow: 1px 1px #55c4ec;
 }
 
 .hometag:hover {
@@ -25,6 +26,7 @@ body {
     font-size: 25px;
     margin: auto;
     font-family: "bangers";
+    text-shadow: 1px 1px #55c4ec;
 }
 
 .quizlink2:hover {
@@ -67,7 +69,7 @@ body {
 .my-5 {
     color: #6457a6;
     font-family: "Bangers";  
-    text-shadow: 2px 2px #091540;
+    text-shadow: 2px 2px #55c4ec;
     font-size: 50px;
     
 }
@@ -82,7 +84,7 @@ body {
 .mb-4 {
     color: #6457a6;
     font-family: "Bangers";  
-    text-shadow: 2px 2px #091540;
+    text-shadow: 2px 2px #55c4ec;
     font-size: 75px;
 }
 
