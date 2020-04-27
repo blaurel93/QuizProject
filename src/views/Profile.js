@@ -14,7 +14,7 @@ const Profile = () => {
   //// THIS IS WHERE WE CAN DISPLAY WHAT ONLY PEOPLE WHO LOG IN CAN SEE ////
   return (
     <Container className="mb-5">
-      <Row className="align-items-center profile-header mb-5 text-center text-md-left profileSpace">
+      <Row className="align-items-center profile-header mb-5 text-center text-md-middle profileSpace">
         <Col md={2}>
           <img
             src={user.picture}
@@ -24,13 +24,12 @@ const Profile = () => {
         </Col>
         <Col md>
           <h2>
-            <p className="lead2 text-muted">{user.email}</p>
+            <p className="lead2 text-muted">Hello {user.nickname} !</p>
           </h2>
         </Col>
       </Row>
 
       <ul>
-        <p>{user.nickname}</p>
         <p>username: {user.name}</p>
         <p>email: {user.email}</p>
         <p>nickname: {user.nickname}</p>
