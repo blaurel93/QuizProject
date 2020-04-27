@@ -65,6 +65,8 @@ body {
   padding-bottom: 20px;
 }
 
+
+
 /*BODY on Lander Page*/
 .my-5 {
     color: #6457a6;
@@ -88,6 +90,16 @@ body {
     font-size: 75px;
 }
 
+/*Quiz on landerpage*/
+.imageQuiz3 {
+    background-image: url("../assets/thomas-lefebvre-aRXPJnXQ9lU-unsplash.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
 
 
 
@@ -101,6 +113,10 @@ body {
 .bg-light {
     background-color: #EEEBD0!important;
 }
+
+
+
+
 
 /*Profile page*/
 
