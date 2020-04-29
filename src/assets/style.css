@@ -10,6 +10,10 @@ body {
     
 }
 
+.nav-logo1 {
+    margin-left: 40px;
+}
+
 .hometag {
     color:#091540;
     font-size: 25px;
@@ -117,6 +121,8 @@ body {
   margin-right: auto;
 }
 
+
+
 .navbar-brand {
     margin: 0;
 }
@@ -140,6 +146,7 @@ body {
 }
 
 .userInfo {
+    margin-top: 100px;
     text-align: left;
     color: #55c4ec!important;
     font-family: "Bangers";  
