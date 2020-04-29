@@ -7,6 +7,7 @@ body {
 /* NavBar Style */
 .bgColor {
     background-color: #EEEBD0!important;
+    
 }
 
 .hometag {
@@ -56,14 +57,20 @@ body {
 
 
 .bgthis {
-    background-image: url("../assets/quizzlypg3.png");
+    background-image: url("../assets/bg2.jpg");
     -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
-  background-size: contain;
+  background-size: cover;
   max-width: 100%!important;
   padding-bottom: 20px;
 }
+
+.navbar {
+    height: 100px;
+}
+
+
 
 
 
@@ -112,8 +119,10 @@ body {
 
 .bg-light {
     background-color: #EEEBD0!important;
+    height: 100px!important;
+    padding: 0 !important;
+    min-height: initial !important;
 }
-
 
 
 
@@ -134,3 +143,4 @@ body {
     text-shadow: 2px 2px #091540;
     font-size: 35px;
 }
+
