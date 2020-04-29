@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/style.css"
 import "../assets/quiz.css"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 import { Link } from "react-router-dom";
 
 
-const Quiz1 = () => (
+function Quiz1() {
+    const [state, setState] = useState({
+        Pa1: "",
+        Pa2: "",
+        ActiveQuiz: "ShowAll",
+        DisplayQuiz: ""
+    })
+    const handleSubmit = () => {
+        console.log("clicked 1");
+    }
+    return (
     <Card className="displayArea">
         <Form>
             <h1 className="Quiz quizTitle">Its Organic & Non GMO....</h1>
@@ -71,11 +81,12 @@ const Quiz1 = () => (
             <FormGroup check row>
                 <Col sm={{ size: 10, offset: 2 }}>
                     <Link to="/quiz">
-                        <Button>Submit</Button>
+                        <Button onClick={handleSubmit}>Submit</Button>
                     </Link>
                 </Col>
             </FormGroup>
         </Form>
     </Card>
-);
+    )
+};
 export default Quiz1;
