@@ -23,7 +23,7 @@ const Profile = () => {
         </Col>
         <Col md>
           <h2>
-            <p className="lead2 text-muted">Hello {user.nickname} !</p>
+            <p className="lead2 text-muted">Hello {user.name} !</p>
           </h2>
         </Col>
       </Row>

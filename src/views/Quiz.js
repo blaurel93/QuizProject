@@ -17,6 +17,8 @@ import {
 } from 'reactstrap';
 import { Route, Link, Switch } from "react-router-dom";
 
+
+
 function Quiz() {
     const { loading, user } = useAuth0();
     const [state, setState] = useState({
