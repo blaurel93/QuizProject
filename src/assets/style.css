@@ -67,7 +67,7 @@ body {
 }
 
 .navbar {
-    height: 100px;
+    height: 110px;
 }
 
 
@@ -117,9 +117,12 @@ body {
   margin-right: auto;
 }
 
+.navbar-brand {
+    margin: 0;
+}
 .bg-light {
     background-color: #EEEBD0!important;
-    height: 100px!important;
+    height: 110px!important;
     padding: 0 !important;
     min-height: initial !important;
 }
