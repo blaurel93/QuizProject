@@ -59,7 +59,6 @@ body {
 }
 
 
-
 .bgthis {
     background-image: url("../assets/bg2.jpg");
     -webkit-background-size: contain;
@@ -76,7 +75,9 @@ body {
 
 
 
-
+.mb-5 {
+    margin-top: 125px;
+}
 
 /*BODY on Lander Page*/
 .my-5 {
