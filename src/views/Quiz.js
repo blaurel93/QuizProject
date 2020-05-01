@@ -34,16 +34,16 @@ function Quiz() {
         setState({ ...state, [e.target.name]: e.target.value })
     }
 
-    const handleSubmit = () => {
-        // var submission = {}
-        // submission.user_email = user.user_email
-        // submission.answers = [state.Pa1, state.Pa2]
-        // axios.post("http://localhost:3001/savequiz", submission)
-        //     .then(function () {
-        //         console.log("were back from the backend")
-        //     })
-        console.log("handled the submit")
-    }
+    // const handleSubmit = () => {
+    //     var submission = {}
+    //     submission.user_email = user.user_email
+    //     submission.answers = [state.Pa1, state.Pa2]
+    //     axios.post("http://localhost:3001/savequiz", submission)
+    //         .then(function () {
+    //             console.log("were back from the backend")
+    //         })
+    //     console.log("handled the submit")
+    // }
 
     const Routes = () => (
         <Switch>

@@ -3,11 +3,11 @@ const express = require("express");
 const { join } = require("path");
 const morgan = require("morgan");
 const app = express();
-
+const quizAPI = require("./routes/api/quizzes")
 const mongoose = require("mongoose");
 const delegateRoutesFor = require("./routes");
 const bodyParser = require("body-parser");
-const port = process.env.SERVER_PORT || 3001;
+const PORT = process.env.SERVER_PORT || 3000;
 
 app.use(function (req, res, next) {
 
@@ -30,6 +30,8 @@ app.use(function (req, res, next) {
 // Define middleware here
 // app.use(express.urlencoded({ extended: true }));
 // app.use(express.json());
+app.use(quizAPI);
+app.use(delegateRoutesFor);
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(bodyParser.json({ limit: "50mb", extended: true }));
 // Serve up static assets (usually on heroku)
@@ -37,15 +39,17 @@ if (process.env.NODE_ENV === "development") {
   app.use(express.static("client/build"));
 }
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/quizzly");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/quizzly", { useNewUrlParser: true });
 // Add routes, both API and view
 
 // delegateRoutesFor(app)
-app.post("/savequiz", function (req, res) {
-  console.log("we hit the route", req.body)
-})
+// app.post("/api/savequiz", function (req, res) {
+//   console.log("we hit the route", req.body)
+// })
 
 app.use(morgan("dev"));
 app.use(express.static(join(__dirname, "build")));
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(PORT, function() {
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+ });
