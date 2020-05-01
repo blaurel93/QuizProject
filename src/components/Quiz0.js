@@ -4,7 +4,7 @@ import "../assets/quiz.css"
 import "../views/Quiz"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 // import { Link } from "react-router-dom";
-
+import API from '../utils/API';
 
 // const { value: firstName, bind: bindFirstName, reset: resetFirstName } = useInput('');
 // const { value: lastName, bind: bindLastName, reset: resetLastName } = useInput('');
@@ -32,7 +32,9 @@ class Quiz0 extends React.Component {
         // this.handleSubmit = this.handleSubmit.bind(this);
         
     }
-
+    // componentDidMount = () => {
+    //     this.setState 
+    // }
     handleChange = (e) => {
         e.preventDefault();
         this.setState({ value: e.target.value })
@@ -68,6 +70,7 @@ class Quiz0 extends React.Component {
             answer4: this.state.value3,
             answer5: this.state.value4
         }
+        API.create(quizResult);
         console.log(quizResult);
         
       }
