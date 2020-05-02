@@ -28,9 +28,9 @@ class Quiz0 extends React.Component {
             value3: '',
             value4: ''
         };
-        
+
         // this.handleSubmit = this.handleSubmit.bind(this);
-        
+
     }
     // componentDidMount = () => {
     //     this.setState 
@@ -38,42 +38,42 @@ class Quiz0 extends React.Component {
     handleChange = (e) => {
         e.preventDefault();
         this.setState({ value: e.target.value })
-        
+
     }
     handleChange1 = (e) => {
         e.preventDefault();
         this.setState({ value1: e.target.value })
-        
+
     }
     handleChange2 = (e) => {
         e.preventDefault();
         this.setState({ value2: e.target.value })
-        
+
     }
     handleChange3 = (e) => {
         e.preventDefault();
         this.setState({ value3: e.target.value })
-        
+
     }
     handleChange4 = (e) => {
         e.preventDefault();
         this.setState({ value4: e.target.value })
-        
+
     }
-    
+
     handleSubmit = (event) => {
         event.preventDefault();
         const quizResult = {
-            answer1: this.state.value,
-            answer2: this.state.value1,
-            answer3: this.state.value2,
-            answer4: this.state.value3,
-            answer5: this.state.value4
+            question1: this.state.value,
+            question2: this.state.value1,
+            question3: this.state.value2,
+            question4: this.state.value3,
+            question5: this.state.value4
         }
         API.create(quizResult);
         console.log(quizResult);
-        
-      }
+
+    }
 
     render() {
         return (
@@ -143,9 +143,9 @@ class Quiz0 extends React.Component {
 
                     <FormGroup check row>
                         <Col sm={{ size: 10, offset: 2 }}>
-                            
-                                <Button type="submit" value="Submit">Submit</Button>
-                            
+
+                            <Button type="submit" value="Submit">Submit</Button>
+
                         </Col>
                     </FormGroup>
                 </Form>

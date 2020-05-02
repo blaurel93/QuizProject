@@ -1,18 +1,20 @@
 const path = require("path");
-
+const router = require("express").Router();
 const users = require("./api/users");
+const quizRoutes = require("./api/quizzes");
 
 
 
-function delegateRoutesFor(app) {
-  app.use("/api/users", users)
-  app.use("/api/savequiz", quizResult)
-  
+//module.exports = function (app) {
+console.log('app is hookin gup to routes file!!!')
+router.use("/api/users", users)
+router.use("/api/savequiz", quizRoutes)
 
 
-  return app;
-}
 
-module.exports = delegateRoutesFor;
+//return app;
+//}
+
+module.exports = router;
 
 

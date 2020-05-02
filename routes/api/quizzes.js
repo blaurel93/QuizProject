@@ -11,7 +11,8 @@ router
   .route("/:id")
   .get(quizController.findById)
   .put(quizController.update)
-  
+
 router.route("/api/savequiz")
   .post(quizController.create)
+
 module.exports = router;

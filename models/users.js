@@ -20,11 +20,11 @@ const quizSchema = new Schema(
 );
 
 
-const Users = mongoose.model("users", usersSchema);
+//const Users = mongoose.model("users", usersSchema);
 const Quiz = mongoose.model("quiz", quizSchema);
 
 module.exports = {
-  Users,
+  // Users,
   Quiz
 };
 

@@ -16,10 +16,18 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function (req, res) {
-    db.QuizResult
+    console.log('We are about to save!! a nequiz!!', req.body)
+    console.log('this is our quiz model!!!', db.Quiz)
+    db.Quiz
       .create(req.body)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+      .then((dbModel) => {
+        console.log('we saved a quiz!!', dbModel)
+        res.json(dbModel)
+      })
+      .catch((err) => {
+        console.log('this is our ERR!!!', err)
+        res.status(422).json(err)
+      });
   },
   update: function (req, res) {
     db.Quiz
