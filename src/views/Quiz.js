@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useAuth0 } from "../react-auth0-spa";
+import { useAuth0 } f
+rom "../react-auth0-spa";
 import axios from "axios";
 import "../assets/style.css";
 import "../assets/quiz.css"
