@@ -48,15 +48,15 @@ function Quiz() {
     const Routes = () => (
         <Switch>
             <Route path="/quiz/Quiz0"
-             render={(props) => <Quiz0 {...props}/>}/>
+                render={(props) => <Quiz0 {...props} />} />
             <Route path="/quiz/Quiz1"
-             render={(props) => <Quiz1 {...props}/>}/>
+                render={(props) => <Quiz1 {...props} />} />
             <Route path="/quiz/Quiz2"
-             render={(props) => <Quiz2 {...props}/>}/>
+                render={(props) => <Quiz2 {...props} />} />
             <Route path="/quiz/Quiz3"
-             render={(props) => <Quiz3 {...props}/>}/>
+                render={(props) => <Quiz3 {...props} />} />
             <Route path="/quiz/Quiz4"
-             render={(props) => <Quiz4 {...props}/>}/>
+                render={(props) => <Quiz4 {...props} />} />
         </Switch>
     );
 
@@ -89,7 +89,7 @@ function Quiz() {
 
     console.log("this is our state", state)
     return (
-        
+
 
         <Container>
             {/* {state.ActiveQuiz()}  CHECK THE STATE HERE       isthistrue  ?() : ()*/}
@@ -103,45 +103,45 @@ function Quiz() {
                         <CardSubtitle>Peppas</CardSubtitle>
                         <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz0" onClick={() => { handleSelectQuiz(0) }}>
-                        <u className="quizButton">Take the Quiz!</u>
+                            <u className="quizButton">Take the Quiz!</u>
                         </Link>
                     </CardBody>
                 </Card>
                 <Card className="boox imageQuiz1">
-                <h2 className="quizTitles quizTitle1">Milks gone bad?</h2>
+                    <h2 className="quizTitles quizTitle1">Milks gone bad?</h2>
                     <CardBody className="quizText0">
                         <CardTitle>Like it sour?</CardTitle>
                         <CardSubtitle>Utterly savvy</CardSubtitle>
                         <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz1" onClick={() => { handleSelectQuiz(1) }}>
-                        <u className="quizButton">Take the Quiz!</u>
+                            <u className="quizButton">Take the Quiz!</u>
                         </Link>
                     </CardBody>
                 </Card>
                 <Card className="boox imageQuiz2">
-                <h2 className="quizTitles quizTitle1">But do you Bike?</h2>
+                    <h2 className="quizTitles quizTitle1">But do you Bike?</h2>
                     <CardBody className="quizText1">
                         <CardTitle>Forever Two Wheels</CardTitle>
                         <CardSubtitle>Keep on rollin</CardSubtitle>
                         <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz2" onClick={() => { handleSelectQuiz(2) }}>
-                        <u className="quizButton">Take the Quiz!</u>
+                            <u className="quizButton">Take the Quiz!</u>
                         </Link>
                     </CardBody>
                 </Card>
                 <Card className="boox imageQuiz3">
-                <h2 className="quizTitles quizText1">Quizzly Bears?</h2>
+                    <h2 className="quizTitles quizText1">Quizzly Bears?</h2>
                     <CardBody className="quizText1">
                         <CardTitle>Grrrrrowl</CardTitle>
                         <CardSubtitle>Sup honey</CardSubtitle>
                         <CardText>Test your knowledge here!</CardText>
                         <Link to="/quiz/Quiz3" onClick={() => { handleSelectQuiz(3) }}>
-                        <u className="quizButton">Take the Quiz!</u>
+                            <u className="quizButton">Take the Quiz!</u>
                         </Link>
                     </CardBody>
                 </Card>
                 <Card className="boox imageQuiz4">
-                <h2 className="quizTitles quizText0">Phish?</h2>
+                    <h2 className="quizTitles quizText0">Phish?</h2>
                     <CardBody className="quizText0">
                         <CardTitle>Something smells</CardTitle>
                         <CardSubtitle>Where the hook at doe?</CardSubtitle>
