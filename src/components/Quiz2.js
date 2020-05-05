@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import "../assets/style.css"
 import "../assets/quiz.css"
+import "../views/Quiz"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 // import { Link } from "react-router-dom";
+import API from '../utils/API';
+
 
 
 class Quiz2 extends React.Component {
@@ -56,6 +59,7 @@ class Quiz2 extends React.Component {
             question4: this.state.value3,
             question5: this.state.value4
         }
+        API.create(quizResult);
         console.log(quizResult);
 
     }
