@@ -50,11 +50,11 @@ class Quiz4 extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const quizResult = {
-            answer1: this.state.value,
-            answer2: this.state.value1,
-            answer3: this.state.value2,
-            answer4: this.state.value3,
-            answer5: this.state.value4
+            question1: this.state.value,
+            question2: this.state.value1,
+            question3: this.state.value2,
+            question4: this.state.value3,
+            question5: this.state.value4
         }
         console.log(quizResult);
 
