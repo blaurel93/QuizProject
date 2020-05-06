@@ -95,9 +95,9 @@ class Quiz4 extends React.Component {
         API.create(quizResult);
         // console.log(quizResult);
 
-        }
         
-
+        
+        
 
     }
 
