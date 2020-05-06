@@ -84,15 +84,19 @@ body {
     color: #6457a6;
     font-family: "Bangers";  
     text-shadow: 2px 2px #55c4ec;
-    font-size: 50px;
-    
+    font-size: 50px; 
+   
 }
+
+
+
 
 .lead {
     color: #F03461;
     font-family: "Bangers";  
     text-shadow: 2px 2px #091540;
     font-size: 40px!important;
+    margin: 0 !important;
 }
 
 .mb-4 {
@@ -161,4 +165,8 @@ body {
 
 .mb-5a {
     margin-top: 200px;
+}
+
+.smallText {
+    font-size: 0.3em;
 }
