@@ -58,9 +58,38 @@ class Quiz3 extends React.Component {
             question4: this.state.value3,
             question5: this.state.value4
         }
-        API.create(quizResult);
 
-        console.log(quizResult);
+
+
+        if (quizResult.question1 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question1 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+
+        if (quizResult.question2 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question2 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question3 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question3 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question4 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question4 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question5 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question5 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        };
+        API.create(quizResult);
+        // console.log(quizResult);
+
 
     }
 
@@ -73,11 +102,11 @@ class Quiz3 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Where do bears live?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value} onChange={this.handleChange}>
-                                <option className="correctAnswer">North of equater</option>
-                                <option>South of equater</option>
-                                <option>Along the equater</option>
-                                <option>Only madagascar</option>
-                                <option>With Goldilocks</option>
+                                <option value={"incorrect1"}>South of equater</option>
+                                <option value={"incorrect2"}>Along the equater</option>
+                                <option value={"correct"} className="correctAnswer">North of equater</option>
+                                <option value={"incorrect3"}>Only madagascar</option>
+                                <option value={"incorrect4"}>With Goldilocks</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -85,11 +114,11 @@ class Quiz3 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which is the largest type of bear?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value1} onChange={this.handleChange1}>
-                                <option>Grizzly bears</option>
-                                <option>Polar bears</option>
-                                <option className="correctAnswer">Kodiak bears</option>
-                                <option>Black bears</option>
-                                <option>Panda bears</option>
+                                <option value={"incorrect1"}>Grizzly bears</option>
+                                <option value={"incorrect2"}>Polar bears</option>
+                                <option value={"correct"} className="correctAnswer">Kodiak bears</option>
+                                <option value={"incorrect3"}>Black bears</option>
+                                <option value={"incorrect4"}>Panda bears</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -97,11 +126,11 @@ class Quiz3 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What is a bear's strongest sense?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value2} onChange={this.handleChange2}>
-                                <option className="correctAnswer">Smell</option>
-                                <option>Sight</option>
-                                <option>Speech</option>
-                                <option>Touch</option>
-                                <option>Hearing</option>
+                                <option value={"incorrect1"}>Sight</option>
+                                <option value={"incorrect2"}>Speech</option>
+                                <option value={"incorrect3"}>Touch</option>
+                                <option value={"incorrect4"}>Hearing</option>
+                                <option value={"correct"} className="correctAnswer">Smell</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -109,11 +138,11 @@ class Quiz3 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which is the only part of a bear's body that is unprotected from bee stings?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value3} onChange={this.handleChange3}>
-                                <option>Paws</option>
-                                <option>Butt</option>
-                                <option>Toes</option>
-                                <option>Eyes</option>
-                                <option className="correctAnswer">Nose</option>
+                                <option value={"incorrect1"}>Paws</option>
+                                <option value={"incorrect2"}>Butt</option>
+                                <option value={"incorrect3"}>Toes</option>
+                                <option value={"incorrect4"}>Eyes</option>
+                                <option value={"correct"} className="correctAnswer">Nose</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -121,11 +150,11 @@ class Quiz3 extends React.Component {
                         <Label for="exampleSelect" sm={2}>How are sun bears different from other bears?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value4} onChange={this.handleChange4}>
-                                <option>They have very shaggy fur.</option>
-                                <option className="correctAnswer">They have a distinctive marking on their chest.</option>
-                                <option>They have red fur.</option>
-                                <option>They eat sunlight</option>
-                                <option>They dont drink water</option>
+                                <option value={"incorrect1"}>They have very shaggy fur.</option>
+                                <option value={"correct"} className="correctAnswer">They have a distinctive marking on their chest.</option>
+                                <option value={"incorrect2"}>They have red fur.</option>
+                                <option value={"incorrect3"}>They eat sunlight</option>
+                                <option value={"incorrect4"}>They dont drink water</option>
                             </Input>
                         </Col>
                     </FormGroup>

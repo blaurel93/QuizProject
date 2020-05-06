@@ -59,10 +59,39 @@ class Quiz1 extends React.Component {
             question4: this.state.value3,
             question5: this.state.value4
         }
+
+        
+
+
+        if (quizResult.question1 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question1 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+
+        if (quizResult.question2 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question2 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question3 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question3 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question4 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question4 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question5 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question5 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        };
+
         API.create(quizResult);
-
-        console.log(quizResult);
-
+        // console.log(quizResult);
     }
 
     render() {
@@ -74,11 +103,11 @@ class Quiz1 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What about milk is true?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value} onChange={this.handleChange}>
-                                <option>Milk will never go bad</option>
-                                <option>Nobody can drink milk</option>
-                                <option className="correctAnswer">To make one gallon of ice cream, it takes 12 pounds of whole milk</option>
-                                <option>Regular milk is not as healthy as organic regular milk</option>
-                                <option>Only whole milk contains vitamin D</option>
+                                <option value={"incorrect1"}>Milk will never go bad</option>
+                                <option value={"incorrect2"}>Nobody can drink milk</option>
+                                <option value={"correct"} className="correctAnswer">To make one gallon of ice cream, it takes 12 pounds of whole milk</option>
+                                <option value={"incorrect3"}>Regular milk is not as healthy as organic regular milk</option>
+                                <option value={"incorrect4"}>Only whole milk contains vitamin D</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -86,11 +115,11 @@ class Quiz1 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which truthfully describes milk?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value1} onChange={this.handleChange1}>
-                                <option className="correctAnswer">For the price, milk supplies more nutrients than juice</option>
-                                <option>Flavored milk isn’t good for you due to added sugar</option>
-                                <option>Soy, almond, coconut and rice beverages are healthier than real dairy milk</option>
-                                <option>People who are sensitive to lactose should avoid milk and all dairy foods like cheese and yogurt</option>
-                                <option>Farmers disregard the environment and use large amounts of pesticides</option>
+                                <option value={"incorrect1"}>Flavored milk isn’t good for you due to added sugar</option>
+                                <option value={"correct"} className="correctAnswer">For the price, milk supplies more nutrients than juice</option>
+                                <option value={"incorrect2"}>Soy, almond, coconut and rice beverages are healthier than real dairy milk</option>
+                                <option value={"incorrect3"}>People who are sensitive to lactose should avoid milk and all dairy foods like cheese and yogurt</option>
+                                <option value={"incorrect4"}>Farmers disregard the environment and use large amounts of pesticides</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -98,11 +127,11 @@ class Quiz1 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value2} onChange={this.handleChange2}>
-                                <option>Dairy cows are given unnecessary antibiotics, transferring antibiotics to the milk we drink</option>
-                                <option>People should avoid milk because of hormones</option>
-                                <option>Milk is made of solid iron</option>
-                                <option className="correctAnswer">Pasteurized milk offers more health benefits than unpasteurized milk</option>
-                                <option>Milk can be found in rocks!</option>
+                                <option value={"incorrect1"}>Dairy cows are given unnecessary antibiotics, transferring antibiotics to the milk we drink</option>
+                                <option value={"incorrect2"}>People should avoid milk because of hormones</option>
+                                <option value={"incorrect3"}>Milk is made of solid iron</option>
+                                <option value={"correct"} className="correctAnswer">Pasteurized milk offers more health benefits than unpasteurized milk</option>
+                                <option value={"incorrect4"}>Milk can be found in rocks!</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -110,11 +139,11 @@ class Quiz1 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which statement about milk is true?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value3} onChange={this.handleChange3}>
-                                <option>Milk builds strong bones</option>
-                                <option className="correctAnswer">UK dairy farmers produce 14 billion litres of milk each year</option>
-                                <option>Drinking milk can help you lose weight</option>
-                                <option>Chicken contains milk!</option>
-                                <option>Milk is “nature’s perfect food.”</option>
+                                <option value={"incorrect1"}>Milk builds strong bones</option>
+                                <option value={"correct"} className="correctAnswer">UK dairy farmers produce 14 billion litres of milk each year</option>
+                                <option value={"incorrect2"}>Drinking milk can help you lose weight</option>
+                                <option value={"incorrect3"}>Chicken contains milk!</option>
+                                <option value={"incorrect4"}>Milk is “nature’s perfect food.”</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -122,9 +151,9 @@ class Quiz1 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Milk...</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value4} onChange={this.handleChange4}>
-                                <option>Milk is normally green</option>
-                                <option>Milk cannot conduct electricity</option>
-                                <option className="correctAnswer">It contains 90% water which helps to rehydrate the body</option>
+                                <option value={"incorrect1"}>Milk is normally green</option>
+                                <option value={"incorrect2"}>Milk cannot conduct electricity</option>
+                                <option value={"correct"} className="correctAnswer">It contains 90% water which helps to rehydrate the body</option>
                             </Input>
                         </Col>
                     </FormGroup>
