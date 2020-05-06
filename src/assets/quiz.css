@@ -162,3 +162,12 @@
 .profileSpace {
     margin-top: 30px;
 }
+.profScoreText {
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+.profScoreHead {
+    margin: auto;
+    font-family: fantasy;
+    padding: 12px;
+}

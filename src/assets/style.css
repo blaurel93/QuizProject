@@ -166,3 +166,7 @@ body {
 .mb-5a {
     margin-top: 200px;
 }
+
+.smallText {
+    font-size: 0.3em;
+}
