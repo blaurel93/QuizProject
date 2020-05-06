@@ -139,11 +139,14 @@ body {
 
 /*Profile page*/
 
+
+
 .lead2 {
     color: #F03461!important;
     font-family: "Bangers";  
     text-shadow: 2px 2px #6457a6;
-    font-size: 75px;
+    font-size: 55px;
+    border: solid 2px red;
 }
 
 .userInfo {
@@ -153,5 +156,9 @@ body {
     font-family: "Bangers";  
     text-shadow: 2px 2px #091540;
     font-size: 35px;
+    border: solid 2px red;
 }
 
+.mb-5a {
+    margin-top: 200px;
+}

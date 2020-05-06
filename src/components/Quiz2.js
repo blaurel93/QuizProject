@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "../assets/style.css"
 import "../assets/quiz.css"
+import "../views/Quiz"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 // import { Link } from "react-router-dom";
 import API from '../utils/API';
+
 
 
 class Quiz2 extends React.Component {
@@ -58,6 +60,7 @@ class Quiz2 extends React.Component {
             question5: this.state.value4
         }
 
+
         if (quizResult.question1 === "correct") {
             console.log("yes")
         } else if (quizResult.question1 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
@@ -86,6 +89,7 @@ class Quiz2 extends React.Component {
         };
         API.create(quizResult);
         // console.log(quizResult);
+
 
     }
 

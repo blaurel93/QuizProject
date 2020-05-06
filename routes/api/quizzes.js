@@ -15,4 +15,7 @@ router
 router.route("/api/savequiz")
   .post(quizController.create)
 
+router.route("/api/viewquizzes")
+  .get(quizController.findQuiz)
+
 module.exports = router;
