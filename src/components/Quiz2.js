@@ -3,6 +3,7 @@ import "../assets/style.css"
 import "../assets/quiz.css"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 // import { Link } from "react-router-dom";
+import API from '../utils/API';
 
 
 class Quiz2 extends React.Component {
@@ -50,13 +51,41 @@ class Quiz2 extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const quizResult = {
-            answer1: this.state.value,
-            answer2: this.state.value1,
-            answer3: this.state.value2,
-            answer4: this.state.value3,
-            answer5: this.state.value4
+            question1: this.state.value,
+            question2: this.state.value1,
+            question3: this.state.value2,
+            question4: this.state.value3,
+            question5: this.state.value4
         }
-        console.log(quizResult);
+        API.create(quizResult);
+        // console.log(quizResult);
+        if (quizResult.question1 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question1 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+
+        if (quizResult.question2 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question2 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question3 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question3 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question4 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question4 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question5 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question5 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        };
+
 
     }
 
@@ -69,11 +98,11 @@ class Quiz2 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Where were bicycles first introduced?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value} onChange={this.handleChange}>
-                                <option className="correctAnswer">Europe</option>
-                                <option>Germany</option>
-                                <option>US</option>
-                                <option>Brazil</option>
-                                <option>China</option>
+                                <option value={"incorrect1"}>Germany</option>
+                                <option value={"correct"} className="correctAnswer">Europe</option>
+                                <option value={"incorrect2"}>US</option>
+                                <option value={"incorrect3"}>Brazil</option>
+                                <option value={"incorrect4"}>China</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -81,11 +110,11 @@ class Quiz2 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What's the core of a bicycle called?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value1} onChange={this.handleChange1}>
-                                <option>Bracket</option>
-                                <option>Pedal</option>
-                                <option className="correctAnswer">Frame</option>
-                                <option>Wheel</option>
-                                <option>Horn</option>
+                                <option value={"incorrect1"}>Bracket</option>
+                                <option value={"incorrect2"}>Pedal</option>
+                                <option value={"correct"} className="correctAnswer">Frame</option>
+                                <option value={"incorrect3"}>Wheel</option>
+                                <option value={"incorrect4"}>Horn</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -93,11 +122,11 @@ class Quiz2 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What does the front fork hold?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value2} onChange={this.handleChange2}>
-                                <option>The back wheel</option>
-                                <option className="correctAnswer">The front wheel</option>
-                                <option>The chain</option>
-                                <option>The pedals</option>
-                                <option>The back</option>
+                                <option value={"incorrect4"}>The back wheel</option>
+                                <option value={"correct"} className="correctAnswer">The front wheel</option>
+                                <option value={"incorrect1"}>The chain</option>
+                                <option value={"incorrect2"}>The pedals</option>
+                                <option value={"incorrect3"}>The back</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -105,11 +134,11 @@ class Quiz2 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What do bicycles use to reduce friction?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value3} onChange={this.handleChange3}>
-                                <option>Rubber</option>
-                                <option>Pedals</option>
-                                <option>Brakes</option>
-                                <option>Air resistance</option>
-                                <option className="correctAnswer">Ball bearings</option>
+                                <option value={"incorrect1"}>Rubber</option>
+                                <option value={"incorrect2"}>Pedals</option>
+                                <option value={"incorrect3"}>Brakes</option>
+                                <option value={"incorrect4"}>Air resistance</option>
+                                <option value={"correct"} className="correctAnswer">Ball bearings</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -117,20 +146,20 @@ class Quiz2 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which bicycle part doesn't have ball bearings?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value4} onChange={this.handleChange4}>
-                                <option>Rear hub</option>
-                                <option>Front hub</option>
-                                <option>Pedals</option>
-                                <option className="correctAnswer">Gear shift</option>
-                                <option>Rear wheel</option>
+                                <option value={"incorrect1"}>Rear hub</option>
+                                <option value={"incorrect2"}>Front hub</option>
+                                <option value={"incorrect3"}>Pedals</option>
+                                <option value={"correct"} className="correctAnswer">Gear shift</option>
+                                <option value={"incorrect4"}>Rear wheel</option>
                             </Input>
                         </Col>
                     </FormGroup>
 
                     <FormGroup check row>
                         <Col sm={{ size: 10, offset: 2 }}>
-                            
-                                <Button type="submit" value="Submit">Submit</Button>
-                            
+
+                            <Button type="submit" value="Submit">Submit</Button>
+
                         </Col>
                     </FormGroup>
                 </Form>

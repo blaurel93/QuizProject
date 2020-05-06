@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "../assets/style.css"
 import "../assets/quiz.css"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import API from '../utils/API';
 
-
+let storage;
 class Quiz4 extends React.Component {
     constructor(props) {
         super(props);
@@ -47,16 +48,49 @@ class Quiz4 extends React.Component {
 
     }
 
+
+
     handleSubmit = (event) => {
         event.preventDefault();
         const quizResult = {
-            answer1: this.state.value,
-            answer2: this.state.value1,
-            answer3: this.state.value2,
-            answer4: this.state.value3,
-            answer5: this.state.value4
+            question1: this.state.value,
+            question2: this.state.value1,
+            question3: this.state.value2,
+            question4: this.state.value3,
+            question5: this.state.value4
         }
-        console.log(quizResult);
+        API.create(quizResult);
+        // console.log(quizResult);
+
+        if (quizResult.question1 === "correct") {
+            console.log("yes");
+
+        } else if (quizResult.question1 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+
+        if (quizResult.question2 === "correct") {
+            console.log("yes")
+
+        } else if (quizResult.question2 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question3 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question3 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question4 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question4 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        }
+        if (quizResult.question5 === "correct") {
+            console.log("yes")
+        } else if (quizResult.question5 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
+            console.log("wrong")
+        };
+
 
     }
 
@@ -69,11 +103,11 @@ class Quiz4 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What feature sets fish apart from other water-dwelling animals?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value} onChange={this.handleChange}>
-                                <option>Tailfin</option>
-                                <option>Eyes</option>
-                                <option>Fins</option>
-                                <option>Gills</option>
-                                <option className="correctAnswer">two-chambered heart</option>
+                                <option value={"incorrect1"}>Tailfin</option>
+                                <option value={"incorrect2"}>Eyes</option>
+                                <option value={"incorrect3"}>Fins</option>
+                                <option value={"incorrect4"}>Gills</option>
+                                <option value={"correct"} className="correctAnswer">two-chambered heart</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -81,11 +115,11 @@ class Quiz4 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What's the proper term for the study of fish?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value1} onChange={this.handleChange1}>
-                                <option>Fishology</option>
-                                <option>Scalology</option>
-                                <option className="correctAnswer">ichthyology</option>
-                                <option>Swimology</option>
-                                <option>Oceography</option>
+                                <option value={"incorrect1"}>Fishology</option>
+                                <option value={"incorrect2"}>Scalology</option>
+                                <option value={"correct"} className="correctAnswer">ichthyology</option>
+                                <option value={"incorrect3"}>Swimology</option>
+                                <option value={"incorrect4"}>Oceography</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -93,11 +127,11 @@ class Quiz4 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which of the following is true about fish scales?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value2} onChange={this.handleChange2}>
-                                <option>Scales can make music</option>
-                                <option>Scales are alive</option>
-                                <option>All fish are covered in scales.</option>
-                                <option>Fish scales do not overlap.</option>
-                                <option className="correctAnswer">Older fish have larger scales.</option>
+                                <option value={"incorrect1"}>Scales can make music</option>
+                                <option value={"incorrect2"}>Scales are alive</option>
+                                <option value={"incorrect3"}>All fish are covered in scales.</option>
+                                <option value={"incorrect4"}>Fish scales do not overlap.</option>
+                                <option value={"correct"} className="correctAnswer">Older fish have larger scales.</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -105,11 +139,11 @@ class Quiz4 extends React.Component {
                         <Label for="exampleSelect" sm={2}>Which part of a fish's body does not help enhance its hearing?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value3} onChange={this.handleChange3}>
-                                <option>Fins</option>
-                                <option className="correctAnswer">Gills</option>
-                                <option>Gas bladder</option>
-                                <option>Lateral line</option>
-                                <option>Ears</option>
+                                <option value={"incorrect1"}>Fins</option>
+                                <option value={"correct"} className="correctAnswer">Gills</option>
+                                <option value={"incorrect2"}>Gas bladder</option>
+                                <option value={"incorrect3"}>Lateral line</option>
+                                <option value={"incorrect4"}>Ears</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -117,11 +151,11 @@ class Quiz4 extends React.Component {
                         <Label for="exampleSelect" sm={2}>What is the largest fish?</Label>
                         <Col sm={10}>
                             <Input type="select" name="select" id="exampleSelect" value={this.state.value4} onChange={this.handleChange4}>
-                                <option className="correctAnswer">Whaleshark</option>
-                                <option>Humpback whale</option>
-                                <option>Killer whale</option>
-                                <option>Guppy</option>
-                                <option>Jellyfish</option>
+                                <option value={"incorrect1"}>Humpback whale</option>
+                                <option value={"incorrect2"}>Killer whale</option>
+                                <option value={"incorrect3"}>Guppy</option>
+                                <option value={"correct"} className="correctAnswer">Whaleshark</option>
+                                <option value={"incorrect4"}>Jellyfish</option>
                             </Input>
                         </Col>
                     </FormGroup>
