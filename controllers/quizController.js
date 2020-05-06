@@ -34,5 +34,12 @@ module.exports = {
       .findOneAndUpdate({ id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  findQuiz: function (req, res) {
+    db.Quiz
+      .find(req.query)
+      .sort({ id: 1 })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
   }
 };

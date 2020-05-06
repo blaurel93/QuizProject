@@ -3,6 +3,10 @@ import { Container, Row, Col } from "reactstrap";
 import Highlight from "../components/Highlight";
 import Loading from "../components/Loading";
 import { useAuth0 } from "../react-auth0-spa";
+import {
+  Card, CardText, CardBody,
+  CardTitle, CardSubtitle
+} from 'reactstrap';
 
 const Profile = () => {
   const { loading, user } = useAuth0();
@@ -34,7 +38,16 @@ const Profile = () => {
           <p>Nickname: {user.nickname}</p>
         </ul>
       </div>
-
+      <Card >
+        <h2>Milks gone bad?</h2>
+        <CardBody className="quizText0">
+          <CardTitle>Like it sour?</CardTitle>
+          <CardSubtitle>Utterly savvy</CardSubtitle>
+          <CardText>Test your knowledge here!</CardText>
+          
+          
+        </CardBody>
+      </Card>
 
 
     </Container >
