@@ -16,7 +16,8 @@ class Content extends Component {
   render() {
     return (
       <div className="next-steps my-5">
-        <h2 className="my-5 text-center">Please try taking this practice Quiz!</h2>
+        <h2 className="my-5 text-center">Did you know?</h2>
+
 
         {/* HERE  UNDERNEATH  IS THE CONTENT AFTER THE LINE BREAK */}
 

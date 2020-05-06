@@ -12,7 +12,7 @@ const Profile = () => {
   }
   //// THIS IS WHERE WE CAN DISPLAY WHAT ONLY PEOPLE WHO LOG IN CAN SEE ////
   return (
-    <Container className="mb-5">
+    <Container className="mb-5a">
       <Row className="align-items-center profile-header mb-5 text-center text-md-middle profileSpace">
         <Col md={2}>
           <img
