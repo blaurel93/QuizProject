@@ -93,7 +93,7 @@ function Quiz() {
 
         <Container>
             {/* {state.ActiveQuiz()}  CHECK THE STATE HERE       isthistrue  ?() : ()*/}
-            <h2 className="quiztitle">Look at our cool quizes!</h2>
+            <h2 className="quiztitle">Take the coolest Quizzly quizes!</h2>
             <div className="cardS">
 
                 <Card className="boox imageQuiz0 quizText0">

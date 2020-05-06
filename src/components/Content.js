@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../assets/style.css";
 
 
 
@@ -18,6 +19,7 @@ class Content extends Component {
   render() {
     return (
       <div className="next-steps my-5">
+
         <h2 className="my-5 text-center">Did you know?</h2>
 
 
@@ -44,9 +46,12 @@ class Content extends Component {
             </CardBody>
           </Card>
         </div>
+
       </div>
     );
   }
 }
+
+
 
 export default Content;
