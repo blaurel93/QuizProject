@@ -7,6 +7,7 @@ import {
   Card, CardText, CardBody,
   CardTitle, CardSubtitle
 } from 'reactstrap';
+import "../assets/quiz.css";
 
 const Profile = () => {
   const { loading, user } = useAuth0();
@@ -38,17 +39,85 @@ const Profile = () => {
           <p>Nickname: {user.nickname}</p>
         </ul>
       </div>
-      <Card >
-        <h2>Milks gone bad?</h2>
+
+        {/* THIS IS WHERE FILLER CARDS ARE  .... WHERE EVENTUALLY THE DB WILL REPLACE INFO */}
+
+      <div className="cardS">
+      <Card className="boox imageQuiz1">
+        <h2 className="profScoreHead">Utterly Savvy</h2>
         <CardBody className="quizText0">
-          <CardTitle>Like it sour?</CardTitle>
-          <CardSubtitle>Utterly savvy</CardSubtitle>
-          <CardText>Test your knowledge here!</CardText>
+          
+          <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
+          <CardText className="profScoreText">SCORED: 80%</CardText>
+          <CardText>Question 1: Correct</CardText>
+          <CardText>Question 2: Incorrect</CardText>
+          <CardText>Question 3: </CardText>
+          <CardText>Question 4: </CardText>
+          <CardText>Question 5: </CardText>
+          
+        </CardBody>
+      </Card>
+      <Card className="boox imageQuiz0">
+        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <CardBody className="quizText0">
+          
+          <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
+          <CardText className="profScoreText">SCORED: 80%</CardText>
           
           
         </CardBody>
       </Card>
-
+      <Card className="boox imageQuiz3">
+        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <CardBody className="quizText0">
+          
+          <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
+          <CardText className="profScoreText">SCORED: 80%</CardText>
+          
+          
+        </CardBody>
+      </Card>
+      <Card className="boox imageQuiz0">
+        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <CardBody className="quizText0">
+          
+          <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
+          <CardText className="profScoreText">SCORED: 80%</CardText>
+          
+          
+        </CardBody>
+      </Card>
+      <Card className="boox imageQuiz4">
+        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <CardBody className="quizText0">
+          
+          <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
+          <CardText className="profScoreText">SCORED: 80%</CardText>
+          
+          
+        </CardBody>
+      </Card>
+      <Card className="boox imageQuiz2">
+        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <CardBody className="quizText0">
+          
+          <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
+          <CardText className="profScoreText">SCORED: 80%</CardText>
+          
+          
+        </CardBody>
+      </Card>
+      <Card className="boox imageQuiz1">
+        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <CardBody className="quizText0">
+          
+          <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
+          <CardText className="profScoreText">SCORED: 80%</CardText>
+          
+          
+        </CardBody>
+      </Card>
+      </div>
 
     </Container >
   );
