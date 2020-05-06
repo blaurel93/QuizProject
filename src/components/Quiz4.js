@@ -59,8 +59,7 @@ class Quiz4 extends React.Component {
             question4: this.state.value3,
             question5: this.state.value4
         }
-        API.create(quizResult);
-        // console.log(quizResult);
+
 
         if (quizResult.question1 === "correct") {
             console.log("yes");
@@ -90,7 +89,8 @@ class Quiz4 extends React.Component {
         } else if (quizResult.question5 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
             console.log("wrong")
         };
-
+        API.create(quizResult);
+        // console.log(quizResult);
 
     }
 
