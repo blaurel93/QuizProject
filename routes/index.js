@@ -9,6 +9,7 @@ const quizRoutes = require("./api/quizzes");
 console.log('app is hookin gup to routes file!!!')
 router.use("/api/users", users)
 router.use("/api/savequiz", quizRoutes)
+router.use("/api/viewquizzes", quizRoutes)
 
 
 

@@ -26,7 +26,7 @@ const Profile = () => {
   }, [user])
 
   const loadData = (isSubscribed) => {
-    API.viewResults().then(function (data) {
+    API.viewResults(`?email=${user.email}`).then(function (data) {
 
       console.log('got these quized from db', data)
     })

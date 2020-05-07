@@ -5,7 +5,7 @@ import "../views/Quiz"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 // import { Link } from "react-router-dom";
 import API from '../utils/API';
-import { useAuth0 } from "../react-auth0-spa";
+import { useAuth0, Auth0Context } from "../react-auth0-spa";
 // const { value: firstName, bind: bindFirstName, reset: resetFirstName } = useInput('');
 // const { value: lastName, bind: bindLastName, reset: resetLastName } = useInput('');
 // const [state, setState] = useState({
@@ -33,6 +33,11 @@ class Quiz0 extends React.Component {
 
         // this.handleSubmit = this.handleSubmit.bind(this);
 
+    }
+
+
+    componentDidMount() {
+        console.log(this.context, "context")
     }
     // handleScore = (e) => {
     //     e.preventDefault();
@@ -75,6 +80,7 @@ class Quiz0 extends React.Component {
     }
 
     handleSubmit = (event) => {
+        let { user } = this.context;
         event.preventDefault();
         let quizResult = {
             question1: this.state.value,
@@ -83,7 +89,8 @@ class Quiz0 extends React.Component {
             question4: this.state.value3,
             question5: this.state.value4,
             numberCorrect: this.state.correct,
-            score: 0
+            score: 0,
+            email: user.email
         }
 
 
@@ -233,4 +240,7 @@ class Quiz0 extends React.Component {
         )
     }
 };
+
+Quiz0.contextType = Auth0Context
+
 export default Quiz0;

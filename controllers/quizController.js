@@ -3,13 +3,21 @@ const db = require("../models");
 // Defining methods for the quizController
 module.exports = {
   findAll: function (req, res) {
-    db.Users
-      .find(req.query)
+    let payload = {}
+    if (req.query.email) {
+      payload.email = req.query.email
+    }
+
+    console.log(payload, 'this is the payload')
+
+    db.Quiz
+      .find(payload)
       .sort({ id: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   findById: function (req, res) {
+    console.log('this is find by id quiz')
     db.Quiz
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
@@ -36,10 +44,18 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findQuiz: function (req, res) {
+    console.log('heyyyyyyyyyyyy')
+    let payload = {}
+    if (req.query.email) {
+      payload.email = req.query.email
+    }
+
+    console.log('hey this is payload', payload)
     db.Quiz
-      .find(req.query)
+      .find(payload)
       .sort({ id: 1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  }
+  },
+
 };
