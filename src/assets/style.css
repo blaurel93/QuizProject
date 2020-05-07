@@ -107,13 +107,48 @@ body {
 }
 
 /*Quiz on landerpage*/
-.imageQuiz3 {
-    background-image: url("../assets/thomas-lefebvre-aRXPJnXQ9lU-unsplash.jpg");
+
+.imageQuiz0a {
+    background-image: url("../assets/aspenG.jpg");
     background-size: cover;
   max-width: 100%!important;
   height: 100%!important;
   background-repeat: no-repeat;
   width: 250px;
+}
+
+.imageQuiz0b {
+    background-image: url("../assets/unicorn3.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.imageQuiz0c {
+    background-image: url("../assets/cat.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.imageQuiz0d {
+    background-image: url("../assets/hashtagB.jpeg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.smallTexta {
+    color: #091540;
+    font-size: 28px;
+    text-shadow: 1px 1px #55c4ec;
+    text-align: center;
 }
 
 
