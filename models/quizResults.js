@@ -7,6 +7,8 @@ const QuizResult = new Schema({
     question3: { type: String, required: true },
     question4: { type: String, required: true },
     question5: { type: String, required: true },
+    quizType: { type: String },
+    score: { type: Number, default: 0 }
 });
 
 module.exports = mongoose.model('QuizResult', QuizResult);
