@@ -72,8 +72,8 @@ const Profile = () => {
               <h2 className="profScoreHead">Jalapeno's Quiz</h2>
               <CardBody className="quizText0">
 
-                <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80% {filterQuizByType("jalapeno").length ? filterQuizByType("jalapeno")[0].score : 0}/5</CardText>
+                <CardSubtitle className="profScoreText"></CardSubtitle>
+                <CardText className="profScoreText">SCORED: {filterQuizByType("jalapeno").length ? filterQuizByType("jalapeno")[0].score : 0}/5</CardText>
 
 
               </CardBody>
@@ -83,42 +83,8 @@ const Profile = () => {
               <h2 className="profScoreHead">Milks gone bad?</h2>
               <CardBody className="quizText0">
 
-                <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80%</CardText>
-                <CardText>Question 1: Correct</CardText>
-                <CardText>Question 2: Incorrect</CardText>
-                <CardText>Question 3: </CardText>
-                <CardText>Question 4: </CardText>
-                <CardText>Question 5: </CardText>
-
-              </CardBody>
-            </Card>
-            <Card className="boox imageQuiz3">
-              <h2 className="profScoreHead">Quizzly Bears?</h2>
-              <CardBody className="quizText0">
-
-                <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80%</CardText>
-
-
-              </CardBody>
-            </Card>
-            <Card className="boox imageQuiz0">
-              <h2 className="profScoreHead">Utterly Savvy WHY DO WE HAVE THIS?</h2>
-              <CardBody className="quizText0">
-
-                <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80%</CardText>
-
-
-              </CardBody>
-            </Card>
-            <Card className="boox imageQuiz4">
-              <h2 className="profScoreHead">Phish?</h2>
-              <CardBody className="quizText0">
-
-                <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80%</CardText>
+                <CardSubtitle className="profScoreText"></CardSubtitle>
+                <CardText className="profScoreText">SCORED: {filterQuizByType("milk").length ? filterQuizByType("milk")[0].score : 0}/5</CardText>
 
 
               </CardBody>
@@ -127,18 +93,28 @@ const Profile = () => {
               <h2 className="profScoreHead">But do you Bike?</h2>
               <CardBody className="quizText0">
 
-                <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80%</CardText>
+                <CardSubtitle className="profScoreText"></CardSubtitle>
+                <CardText className="profScoreText">SCORED: {filterQuizByType("bike").length ? filterQuizByType("bike")[0].score : 0}/5</CardText>
 
 
               </CardBody>
             </Card>
-            <Card className="boox imageQuiz1">
-              <h2 className="profScoreHead">Utterly Savvy WHY DO WE HAVE THIS?</h2>
+            <Card className="boox imageQuiz3">
+              <h2 className="profScoreHead">Quizzly Bears?</h2>
               <CardBody className="quizText0">
 
-                <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80%</CardText>
+                <CardSubtitle className="profScoreText"></CardSubtitle>
+                <CardText className="profScoreText">SCORED: {filterQuizByType("bear").length ? filterQuizByType("bear")[0].score : 0}/5</CardText>
+
+
+              </CardBody>
+            </Card>
+            <Card className="boox imageQuiz4">
+              <h2 className="profScoreHead">Phish?</h2>
+              <CardBody className="quizText0">
+
+                <CardSubtitle className="profScoreText"></CardSubtitle>
+                <CardText className="profScoreText">SCORED: {filterQuizByType("phish").length ? filterQuizByType("phish")[0].score : 0}/5</CardText>
 
 
               </CardBody>
