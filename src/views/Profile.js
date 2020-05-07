@@ -44,7 +44,7 @@ const Profile = () => {
 
       <div className="cardS">
       <Card className="boox imageQuiz1">
-        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <h2 className="profScoreHead">Milks gone bad?</h2>
         <CardBody className="quizText0">
           
           <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
@@ -58,7 +58,7 @@ const Profile = () => {
         </CardBody>
       </Card>
       <Card className="boox imageQuiz0">
-        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <h2 className="profScoreHead">Jalapeno's Quiz</h2>
         <CardBody className="quizText0">
           
           <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
@@ -68,7 +68,7 @@ const Profile = () => {
         </CardBody>
       </Card>
       <Card className="boox imageQuiz3">
-        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <h2 className="profScoreHead">Quizzly Bears?</h2>
         <CardBody className="quizText0">
           
           <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
@@ -78,7 +78,7 @@ const Profile = () => {
         </CardBody>
       </Card>
       <Card className="boox imageQuiz0">
-        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <h2 className="profScoreHead">Utterly Savvy WHY DO WE HAVE THIS?</h2>
         <CardBody className="quizText0">
           
           <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
@@ -88,7 +88,7 @@ const Profile = () => {
         </CardBody>
       </Card>
       <Card className="boox imageQuiz4">
-        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <h2 className="profScoreHead">Phish?</h2>
         <CardBody className="quizText0">
           
           <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
@@ -98,7 +98,7 @@ const Profile = () => {
         </CardBody>
       </Card>
       <Card className="boox imageQuiz2">
-        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <h2 className="profScoreHead">But do you Bike?</h2>
         <CardBody className="quizText0">
           
           <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
@@ -108,7 +108,7 @@ const Profile = () => {
         </CardBody>
       </Card>
       <Card className="boox imageQuiz1">
-        <h2 className="profScoreHead">Utterly Savvy</h2>
+        <h2 className="profScoreHead">Utterly Savvy WHY DO WE HAVE THIS?</h2>
         <CardBody className="quizText0">
           
           <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
