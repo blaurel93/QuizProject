@@ -165,9 +165,18 @@
 .profScoreText {
     font-size: 1.5em;
     letter-spacing: 1.5px;
+    color: white;
+    font-family: "Bangers";
+    text-shadow: 2px 2px black;
 }
 .profScoreHead {
-    margin: auto;
-    font-family: fantasy;
-    padding: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px black;
 }
+
