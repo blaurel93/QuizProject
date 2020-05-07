@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Highlight from "../components/Highlight";
 import Loading from "../components/Loading";
@@ -13,6 +13,7 @@ import "../assets/quiz.css";
 const Profile = () => {
   const { loading, user } = useAuth0();
   console.log(user, "autho user")
+  let [quizes, setQuizes] = useState([])
 
 
 
@@ -26,11 +27,16 @@ const Profile = () => {
   }, [user])
 
   const loadData = (isSubscribed) => {
-    API.viewResults(`?email=${user.email}`).then(function (data) {
+    API.viewResults(`?email=${user.email}`).then(function (res) {
+      if (res.status >= 200) {
+        setQuizes(res.data)
+      }
 
-      console.log('got these quized from db', data)
     })
   }
+
+
+  let filterQuizByType = (x) => quizes.filter(quiz => quiz.quizType === x && quiz.score);
   //// THIS IS WHERE WE CAN DISPLAY WHAT ONLY PEOPLE WHO LOG IN CAN SEE ////
   return (
     <>
@@ -67,7 +73,7 @@ const Profile = () => {
               <CardBody className="quizText0">
 
                 <CardSubtitle className="profScoreText">USER: JaketheSnake</CardSubtitle>
-                <CardText className="profScoreText">SCORED: 80%</CardText>
+                <CardText className="profScoreText">SCORED: 80% {filterQuizByType("jalapeno").length ? filterQuizByType("jalapeno")[0].score : 0}/5</CardText>
 
 
               </CardBody>
