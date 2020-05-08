@@ -42,28 +42,28 @@ const Profile = () => {
     <>
       {loading || !user ? <Loading /> :
 
-        <Container className="mb-5a">
-          <Row className="align-items-center profile-header mb-5 text-center text-md-middle profileSpace">
-            <Col md={2}>
-              <img
-                src={user.picture}
-                alt="Profile"
-                className="rounded-circle img-fluid profile-picture mb-3 mb-md-0"
-              />
-            </Col>
-            <Col md>
-              <h2>
-                <p className="lead2 text-muted">Hello {user.name} !</p>
-              </h2>
-            </Col>
-          </Row>
-          <div className="userInfo">
-            <ul>
-              <p>Username: {user.name} </p>
-              <p>Email: {user.email}</p>
-              <p>Nickname: {user.nickname}</p>
-            </ul>
-          </div>
+        <Container className="mb-5ab">
+
+          <Card className="personalInfo">
+            <CardBody className="quizText0">
+
+
+              <Col md>
+                <h2>
+                  <p className="lead2 text-muted">Hello {user.name} !</p>
+                </h2>
+              </Col>
+
+              <div className="userInfo">
+                <ul>
+                  <p>Username: {user.name} </p>
+                  <p>Email: {user.email}</p>
+                  <p>Nickname: {user.nickname}</p>
+                </ul>
+              </div>
+
+            </CardBody>
+          </Card>
 
           {/* THIS IS WHERE FILLER CARDS ARE  .... WHERE EVENTUALLY THE DB WILL REPLACE INFO */}
 
