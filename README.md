@@ -1,88 +1,86 @@
-# Sample 01 - Logging In and Gated Content
 
-This sample demonstrates:
 
-- Logging in to Auth0 using Redirect Mode
-- Accessing profile information that has been provided in the ID token
-- Gated content. The `/profile` route is not accessible without having first logged in
+# Team Project 3
 
-## Project setup
+As the final project for the University of Utah Coding Bootcamp, our team was able to create whatever app that we wanted.  The requirements are it must be Full Stack MERN.  It had to use authentication to log into your account. We also had to use React as the framework for the entire project.
 
-Use `yarn` or `npm` to install the project dependencies:
+*****
 
-```bash
-# Using npm..
-npm install
+# Quizzly
 
-# Using yarn..
-yarn install
-```
+Our team created a quiz app called Quizzly.  As a user you can create a profile, take a quiz, and have your answers saved to the profile page.  The quizzes are all different types of fun activities.  We wanted to make a fun creative app that was colorful, creative, and responsive.  Quizzly can be viewed in desktop and mobile.  Enjoy the fun that we have created!
 
-### Configuration
+*****
 
-The project needs to be configured with your Auth0 domain and client ID in order for the authentication flow to work.
+## How to Use
 
-To do this, first copy `src/auth_config.json.example` into a new file in the same folder called `src/auth_config.json`, and replace the values with your own Auth0 application credentials:
+The user is taken to the home page, where you can see some fun trivia questions.  In the top right corner, you can log in/create a new account.  Once you log in you now have access to the quizzes that we have.  Click on the take the quiz button and on which quiz you want to take.  You can then take the quiz by answering the questions.  Once the quiz is done, you can see your score.  You are also able to see your score on all the quizzes that you have take on the profile page.  
 
-```json
-{
-  "domain": "{YOUR AUTH0 DOMAIN}",
-  "clientId": "{YOUR AUTH0 CLIENT ID}"
-}
-```
+*****
 
-### Compiles and hot-reloads for development
+## Design  
 
-```bash
-npm run start
-```
+We wanted to create a fun and colorful design.  Our quizzes and cards are fulled with color and fun images.  It was fun to design an app that was colorful, fun, and creative.  You can see the color scheme that we used in the image below.
 
-## Deployment
+![Colors](src/assets/Projectcolor.PNG " SSH Instructions 6")
 
-### Compiles and minifies for production
+*****
 
-```bash
-npm run build
-```
+### Landing Page
 
-### Docker build
+* This is the page that you will land on for our app!
 
-To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
+![Landing Page](src/assets/LandingPage.PNG " SSH Instructions 6")
 
-### Run your tests
+### Log In 
 
-```bash
-npm run test
-```
+* This is the log in pop-up.  People will use this to sign in or create a new account.
 
-## Frequently Asked Questions
+![Log In](src/assets/logIn.PNG  " SSH Instructions 6")
 
-We are compiling a list of questions and answers regarding the new JavaScript SDK - if you're having issues running the sample applications, [check the FAQ](https://github.com/auth0/auth0-spa-js/blob/master/FAQ.md)!
+### Logged On Page
 
-# What is Auth0?
+* You will see this page once you have logged on.
 
-Auth0 helps you to:
+![Logged On Page](src/assets/LoggedOnLander.PNG " SSH Instructions 6")
 
-- Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, among others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
-- Add authentication through more traditional **[username/password databases](https://docs.auth0.com/mysql-connection-tutorial)**.
-- Add support for **[linking different user accounts](https://docs.auth0.com/link-accounts)** with the same user.
-- Support for generating signed [Json Web Tokens](https://docs.auth0.com/jwt) to call your APIs and **flow the user identity** securely.
-- Analytics of how, when and where users are logging in.
-- Pull data from other sources and add it to the user profile, through [JavaScript rules](https://docs.auth0.com/rules).
+### Quiz Page
 
-## Create a Free Auth0 Account
+* The quiz page! There is where you can take all of our fun quizzes.
 
-1. Go to [Auth0](https://auth0.com/signup) and click Sign Up.
-2. Use Google, GitHub or Microsoft Account to login.
+![Quiz Page](src/assets/QuizPage.PNG " SSH Instructions 6")
 
-## Issue Reporting
+### Profile Page
 
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+* This is your profile page, you can see all the scores you took on your quizzes.
 
-## Author
+![Profile Page](src/assets/profilepage.PNG " SSH Instructions 6")
 
-[Auth0](https://auth0.com)
+*****
 
-## License
+## Problems 
 
-This project is licensed under the MIT license. See the [LICENSE](../LICENSE) file for more info.
+React was awfully hard to integrate into all that we have learned in class.  Just adding CSS and HTML was a learning curve.  The design process was different for React compared to just creating a webpage.  Arranging everything took some time but once it was created and understood it was fun to try something new.  The other problem that we had was making everything mobile. Using authentication and auth 0 for the first time was also a very steep learning curve.  The back-end people had their time full of creating the correct code to connect everything together.  The quiz and the quiz answers showing the profile page was especially hard.  It was a hard learning curve for those working the front and the back end on this project, but we are proud of what we have accomplished.
+
+*****
+
+## Future Development 
+
+We would like to add more quizzes on the future project.  We would also like to add topics, so you can choose which kind of quiz you would like to take.  For example, you could choose to take a pop-culture quiz, history quiz or a music quiz.  With these topics we would put them into the nav bar, and then have a drop down to a page that is filled with topic quiz.  
+
+*****
+
+## Created By
+
+1. Robert Bovee - Frontend Design and Readme
+2. Blaise Laurel - Backend, Auth 0 and authentication
+3. Atravias Borley - Backend and quiz questions
+4. Jordan Hanson - Backend
+
+*****
+
+## Links 
+
+https://github.com/blaurel93/QuizProject
+
+https://immense-shelf-50735.herokuapp.com/
