@@ -26,6 +26,21 @@ We wanted to create a fun and colorful design.  Our quizzes and cards are fulled
 
 *****
 
+## Tech Used
+
+1. React
+2. HTML
+3. CSS
+4. JavaScript
+5. API
+6. Node
+7. jQuery
+8. React Strap
+9. Mongo DB
+
+
+*****
+
 ### Landing Page
 
 * This is the page that you will land on for our app!
