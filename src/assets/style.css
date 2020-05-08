@@ -188,12 +188,13 @@ body {
     font-family: "Bangers";  
     text-shadow: 2px 2px #6457a6;
     font-size: 55px;
+    text-align: center;
 }
 
 .userInfo {
     margin-top: 50px;
     margin-bottom: 50px;
-    text-align: left;
+    text-align: center;
     color: #55c4ec!important;
     font-family: "Bangers";  
     text-shadow: 2px 2px #091540;
@@ -207,3 +208,13 @@ body {
 .smallText {
     font-size: 0.3em;
 }
+
+.personalInfo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 2px solid #55c4ec!important;
+}
+
+
+
