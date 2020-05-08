@@ -39,15 +39,7 @@ class Quiz0 extends React.Component {
     componentDidMount() {
         console.log(this.context, "context")
     }
-    // handleScore = (e) => {
-    //     e.preventDefault();
-    //     var score = e.target.value.correct;
-    //     console.log(score);
-    // }
-    // componentDidMount = () => {
-    //     // console.log(this.state.);
-    //     console.log("this is the quiz0 page")
-    // }
+
     handleChange = (e) => {
         e.preventDefault();
         var selected = e.target.value
