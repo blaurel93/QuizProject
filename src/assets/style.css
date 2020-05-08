@@ -88,6 +88,9 @@ body {
    
 }
 
+.hero {
+    max-width: 750px !important;
+}
 
 
 
@@ -107,13 +110,48 @@ body {
 }
 
 /*Quiz on landerpage*/
-.imageQuiz3 {
-    background-image: url("../assets/thomas-lefebvre-aRXPJnXQ9lU-unsplash.jpg");
+
+.imageQuiz0a {
+    background-image: url("../assets/aspenG.jpg");
     background-size: cover;
   max-width: 100%!important;
   height: 100%!important;
   background-repeat: no-repeat;
   width: 250px;
+}
+
+.imageQuiz0b {
+    background-image: url("../assets/unicorn3.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.imageQuiz0c {
+    background-image: url("../assets/cat.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.imageQuiz0d {
+    background-image: url("../assets/hashtagB.jpeg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.smallTexta {
+    color: black;
+    font-size: 28px;
+    text-shadow: 1px 1px #55c4ec;
+    text-align: center;
 }
 
 
@@ -150,21 +188,20 @@ body {
     font-family: "Bangers";  
     text-shadow: 2px 2px #6457a6;
     font-size: 55px;
-    border: solid 2px red;
 }
 
 .userInfo {
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: left;
     color: #55c4ec!important;
     font-family: "Bangers";  
     text-shadow: 2px 2px #091540;
     font-size: 35px;
-    border: solid 2px red;
 }
 
 .mb-5a {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .smallText {

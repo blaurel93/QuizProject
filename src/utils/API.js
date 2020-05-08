@@ -5,7 +5,7 @@ export default {
     console.log(quizResults);
     return axios.post('http://localhost:3001/api/savequiz', quizResults);
   },
-  viewResults: function () {
-    return axios.get('http://localhost:3001/api/viewquizzes');
+  viewResults: function (query) {
+    return axios.get(`http://localhost:3001/api/savequiz${query ? `${query}` : ''}`);
   }
 }

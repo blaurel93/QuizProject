@@ -25,23 +25,33 @@ class Content extends Component {
 
         {/* HERE  UNDERNEATH  IS THE CONTENT AFTER THE LINE BREAK */}
         <div className="cardS">
-          <Card className="boox imageQuiz0">
-            <h2 className="smallText">Jalapeno's Quiz</h2>
+          <Card className="boox imageQuiz0a">
             <CardBody>
-              <CardTitle className="smallText">Oooh its hot!</CardTitle>
-              <CardSubtitle className="smallText">Peppas</CardSubtitle>
-              <CardText className="smallText">Test your knowledge here!</CardText>
 
+              <CardTitle className="smallTexta">The largest known living organism is an aspen grove.</CardTitle>
 
             </CardBody>
           </Card>
-          <Card className="boox imageQuiz0">
-            <h2 className="smallText">Jalapeno's Quiz</h2>
+          <Card className="boox imageQuiz0b">
             <CardBody>
-              <CardTitle className="smallText">Oooh its hot!</CardTitle>
-              <CardSubtitle className="smallText">Peppas</CardSubtitle>
-              <CardText className="smallText">Test your knowledge here!</CardText>
 
+              <CardTitle className="smallTexta">The unicorn is the national animal of Scotland.</CardTitle>
+
+            </CardBody>
+          </Card>
+
+          <Card className="boox imageQuiz0c">
+            <CardBody>
+
+              <CardTitle className="smallTexta">Some cats are allergic to people and other cats!</CardTitle>
+
+            </CardBody>
+          </Card>
+
+          <Card className="boox imageQuiz0d">
+            <CardBody>
+
+              <CardTitle className="smallTexta">The hashtag symbol is technically called an octothorpe.</CardTitle>
 
             </CardBody>
           </Card>

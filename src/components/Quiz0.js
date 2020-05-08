@@ -5,7 +5,7 @@ import "../views/Quiz"
 import { Col, Button, Form, FormGroup, Label, Input, Card } from 'reactstrap';
 // import { Link } from "react-router-dom";
 import API from '../utils/API';
-import { useAuth0 } from "../react-auth0-spa";
+import { useAuth0, Auth0Context } from "../react-auth0-spa";
 // const { value: firstName, bind: bindFirstName, reset: resetFirstName } = useInput('');
 // const { value: lastName, bind: bindLastName, reset: resetLastName } = useInput('');
 // const [state, setState] = useState({
@@ -27,32 +27,30 @@ class Quiz0 extends React.Component {
             value2: '',
             value3: '',
             value4: '',
-            numberCorrect: 0
+            numberCorrect: 0,
+            showAnswers: false
         };
 
         // this.handleSubmit = this.handleSubmit.bind(this);
 
     }
-    // handleScore = (e) => {
-    //     e.preventDefault();
-    //     var score = e.target.value.correct;
-    //     console.log(score);
-    // }
-    // componentDidMount = () => {
-    //     // console.log(this.state.);
-    //     console.log("this is the quiz0 page")
-    // }
+
+
+    componentDidMount() {
+        console.log(this.context, "context")
+    }
+
     handleChange = (e) => {
         e.preventDefault();
         var selected = e.target.value
         this.setState({ value: selected })
-        
+
     }
     handleChange1 = (e) => {
         e.preventDefault();
         var selected = e.target.value
         this.setState({ value1: selected })
-        
+
     }
     handleChange2 = (e) => {
         e.preventDefault();
@@ -74,48 +72,78 @@ class Quiz0 extends React.Component {
     }
 
     handleSubmit = (event) => {
+        let { user } = this.context;
         event.preventDefault();
-        const quizResult = {
+        let quizResult = {
             question1: this.state.value,
             question2: this.state.value1,
             question3: this.state.value2,
             question4: this.state.value3,
             question5: this.state.value4,
-            numberCorrect: this.state.correct
+            numberCorrect: this.state.correct,
+            score: 0,
+            email: user.email
         }
 
 
         if (quizResult.question1 === "correct") {
             console.log("yes")
+            quizResult.score = quizResult.score + 1;
+
         } else if (quizResult.question1 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
             console.log("wrong")
         }
 
         if (quizResult.question2 === "correct") {
             console.log("yes")
+            quizResult.score = quizResult.score + 1;
+
         } else if (quizResult.question2 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
             console.log("wrong")
         }
         if (quizResult.question3 === "correct") {
             console.log("yes")
+            quizResult.score = quizResult.score + 1;
+
         } else if (quizResult.question3 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
             console.log("wrong")
         }
         if (quizResult.question4 === "correct") {
             console.log("yes")
+            quizResult.score = quizResult.score + 1;
+
         } else if (quizResult.question4 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
             console.log("wrong")
         }
         if (quizResult.question5 === "correct") {
             console.log("yes")
+            quizResult.score = quizResult.score + 1;
+
         } else if (quizResult.question5 === "incorrect1" || "incorrect2" || "incorrect3" || "incorrect4") {
             console.log("wrong")
         };
-        API.create(quizResult);
+
+        this.setState({ showAnswers: true }, function () {
+            quizResult.quizType = 'jalapeno'
+            API.create(quizResult);
+        })
+
         // console.log(quizResult);
     }
 
+
+
     render() {
+
+        var style = {
+            correct: {
+                backgroundColor: this.state.showAnswers ? 'green' : ''
+            },
+            wrong: {
+                backgroundColor: 'red'
+            }
+        }
+
         return (
             <Card className="displayArea">
                 <Form onSubmit={this.handleSubmit}>
@@ -123,7 +151,7 @@ class Quiz0 extends React.Component {
                     <FormGroup row>
                         <Label for="exampleSelect" sm={2}>Which fun fact is true?</Label>
                         <Col sm={10}>
-                            <Input type="select" name="select" id="exampleSelect" value={this.state.value} onChange={this.handleChange}>
+                            <Input style={this.state.value === 'correct' ? style.correct : {}} type="select" name="select" id="exampleSelect" value={this.state.value} onChange={this.handleChange}>
 
                                 <option value={"incorrect1"}>Jalapenos are used as bullets</option>
                                 <option value={"correct"} className="correctAnswer">Jalapenos are one of the best sources of vitamin C</option>
@@ -131,14 +159,14 @@ class Quiz0 extends React.Component {
                                 <option value={"incorrect3"}>The seeds in a jalapeno are the HOTTEST part of the pepper</option>
                                 <option value={"incorrect4"}>Couldn't it be 5</option>
 
-                             
+
                             </Input>
                         </Col>
                     </FormGroup>
                     <FormGroup row>
                         <Label for="exampleSelect" sm={2}>What is crazy about jalapenos?</Label>
                         <Col sm={10}>
-                            <Input type="select" name="select" id="exampleSelect" value={this.state.value1} onChange={this.handleChange1}>
+                            <Input style={this.state.value1 === 'correct' ? style.correct : {}} type="select" name="select" id="exampleSelect" value={this.state.value1} onChange={this.handleChange1}>
 
                                 <option value={"incorrect1"}>You cant grow jalapenos</option>
                                 <option value={"incorrect2"}>Jalapenos can only grow in the desert</option>
@@ -152,7 +180,7 @@ class Quiz0 extends React.Component {
                     <FormGroup row>
                         <Label for="exampleSelect" sm={2}>What can Jalapenos do??</Label>
                         <Col sm={10}>
-                            <Input type="select" name="select" id="exampleSelect" value={this.state.value2} onChange={this.handleChange2}>
+                            <Input style={this.state.value2 === 'correct' ? style.correct : {}} type="select" name="select" id="exampleSelect" value={this.state.value2} onChange={this.handleChange2}>
 
                                 <option value={"incorrect1"}>jalapenos will blind you</option>
                                 <option value={"incorrect2"}>Jalapenos can hit the woah</option>
@@ -166,7 +194,7 @@ class Quiz0 extends React.Component {
                     <FormGroup row>
                         <Label for="exampleSelect" sm={2}>Which of the following is true?</Label>
                         <Col sm={10}>
-                            <Input type="select" name="select" id="exampleSelect" value={this.state.value3} onChange={this.handleChange3}>
+                            <Input style={this.state.value3 === 'correct' ? style.correct : {}} type="select" name="select" id="exampleSelect" value={this.state.value3} onChange={this.handleChange3}>
 
                                 <option value={"incorrect1"}>Bell peppers are the same as jalapenos</option>
                                 <option value={"correct"} className="correctAnswer">About 40,000 acres are dedicated for the cultivation of Jalapenos in Mexico</option>
@@ -180,7 +208,7 @@ class Quiz0 extends React.Component {
                     <FormGroup row>
                         <Label for="exampleSelect" sm={2}>Which is fun about jalapenos?</Label>
                         <Col sm={10}>
-                            <Input type="select" name="select" id="exampleSelect" value={this.state.value4} onChange={this.handleChange4}>
+                            <Input style={this.state.value4 === 'correct' ? style.correct : {}} type="select" name="select" id="exampleSelect" value={this.state.value4} onChange={this.handleChange4}>
 
                                 <option value={"incorrect1"}>Jalapenos are used as a dessert for kids!</option>
                                 <option value={"incorrect1"}>Jalapenos rot your teeth</option>
@@ -204,4 +232,7 @@ class Quiz0 extends React.Component {
         )
     }
 };
+
+Quiz0.contextType = Auth0Context
+
 export default Quiz0;
